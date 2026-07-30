@@ -1,75 +1,45 @@
 # Phase 0 Remote, CI, and Protection Status
 
-Repository: `BogaertN/forge2`
+Phase 0 status:
 
-Visibility: **PRIVATE**
+**ACCEPTED**
 
-## Main state
+Repository:
 
-Main commit:
+`BogaertN/forge2`
 
-`d805691e169e52bc00ea9ec674eba706abd3ddda`
+Visibility:
 
-Main remains unchanged during the closure-candidate
-correction.
+**PRIVATE**
 
-## Branch-protection disposition
+Verified accepted parent:
 
-Classic GitHub branch protection and repository rulesets
-are unavailable for this private repository on the current
-account plan.
+`2175de8f82c0526e2034533abd4d495f9ca3ed14`
 
-The repository remains private. A paid-plan upgrade is not
-required for the Forge 2.0 build.
+Corrected build-branch CI:
 
-## Preserved failed closure attempt
+`30572121322` — **SUCCESS**
 
-Build branch:
+Integrated main CI:
 
-`build/phase0-000c-c-b1`
+`30572540342` — **SUCCESS**
 
-Commit:
+Preserved failed CI:
 
-`e683ffedf26506d8a2490707a89b4dfce5f73611`
+`30571121938` — **PRESERVED AS EVIDENCE**
 
-Failed run:
+Classic GitHub branch protection:
 
-`30571121938`
+**UNAVAILABLE ON CURRENT ACCOUNT PLAN**
 
-Failed job:
+Repository rulesets:
 
-`90967820591`
+**UNAVAILABLE ON CURRENT ACCOUNT PLAN**
 
-Exact verifier result:
+Compensating controls:
 
-`Commit parent mismatch`
+**ACTIVE AND VERIFIED**
 
-The failed GitHub Actions log proves that checkout used:
+Phase 1 entry:
 
-`fetch-depth: 1`
-
-## Root cause
-
-The verifier requires the current commit and `HEAD^` so it
-can prove the exact parent.
-
-The source, compilation, and unit tests passed. The parent
-object was absent from the one-commit checkout.
-
-## Accepted correction candidate
-
-Build:
-
-`FORGE2-PHASE0-BUILD-000C-C-B1-R2`
-
-The workflow now declares:
-
-`fetch-depth: 2`
-
-Two commits are the minimum history needed to verify the
-current commit and its direct parent.
-
-The original failure remains preserved as evidence.
-
-Phase 0 final acceptance remains pending until the corrected
-build branch and then main pass GitHub Actions.
+**AUTHORIZED BY FINAL PHASE 0 ACCEPTANCE**

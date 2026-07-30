@@ -20,23 +20,23 @@ Decision Owner:
 
 **Nicholas Jacob Bogaert / AI.Web Inc.**
 
-Current section:
+Completed section:
 
 25.1 Phase 0 — Decision, preservation, and clean establishment
 
-Current build:
+Phase 0 status:
 
-FORGE2-PHASE0-BUILD-000C-C-B1
+**ACCEPTED**
 
-Current status:
+Final acceptance build:
 
-The independent private repository and parent CI are
-verified.
+`FORGE2-PHASE0-BUILD-000C-C-B3`
 
-Server-side branch protection is unavailable on the
-current account plan. The repository remains private and
-compensating controls are being verified.
+Next authorized section:
 
-This build is a Phase 0 closure candidate.
+**Phase 1 — Immutable core contracts and state
+identities**
 
-No product capability is claimed.
+No later phase is authorized merely because Phase 0
+passed. Each phase must satisfy its own objective,
+boundaries, tests, evidence, and acceptance gate.

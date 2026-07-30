@@ -1,6 +1,6 @@
-"""Phase 0 closure-candidate identity.
+"""Final Phase 0 establishment identity.
 
-This module reports establishment state only.
+This module reports accepted establishment state only.
 It does not provide a product capability.
 """
 
@@ -10,11 +10,11 @@ from dataclasses import asdict, dataclass
 from typing import Any, Final
 
 
-BUILD_ID: Final[str] = "FORGE2-PHASE0-BUILD-000C-C-B1"
+BUILD_ID: Final[str] = "FORGE2-PHASE0-BUILD-000C-C-B3"
 FORGE2_VERSION: Final[str] = "0.0.0"
 
 STATUS_SCHEMA_VERSION: Final[str] = (
-    "aiweb_forge2_establishment_status_v3"
+    "aiweb_forge2_establishment_status_v4"
 )
 
 CONTROLLING_ROADMAP_ID: Final[str] = (
@@ -29,6 +29,10 @@ REMOTE_URL: Final[str] = (
     "https://github.com/BogaertN/forge2"
 )
 
+NEXT_PHASE: Final[str] = (
+    "PHASE_1_IMMUTABLE_CORE_CONTRACTS_AND_STATE_IDENTITIES"
+)
+
 
 @dataclass(frozen=True, slots=True)
 class EstablishmentStatus:
@@ -36,14 +40,17 @@ class EstablishmentStatus:
     build_id: str
     forge2_version: str
     phase: str
+    acceptance_status: str
+    next_phase: str
+    next_phase_entry_authorized: bool
     repository_independent: bool
     forge1_runtime_dependency: bool
     product_capability_claimed: bool
     remote_configured: bool
     remote_repository: str
     remote_url: str
-    parent_ci_status: str
-    closure_candidate_ci_status: str
+    verified_build_branch_ci_status: str
+    verified_main_ci_status: str
     branch_protection_status: str
     compensating_controls_status: str
     roadmap_id: str
@@ -54,30 +61,32 @@ class EstablishmentStatus:
 
 
 def establishment_status() -> EstablishmentStatus:
-    """Return Phase 0 closure-candidate status."""
+    """Return final accepted Phase 0 status."""
 
     return EstablishmentStatus(
         schema_version=STATUS_SCHEMA_VERSION,
         build_id=BUILD_ID,
         forge2_version=FORGE2_VERSION,
-        phase="PHASE_0_CLOSURE_CANDIDATE",
+        phase="PHASE_0_ACCEPTED",
+        acceptance_status="PASS",
+        next_phase=NEXT_PHASE,
+        next_phase_entry_authorized=True,
         repository_independent=True,
         forge1_runtime_dependency=False,
         product_capability_claimed=False,
         remote_configured=True,
         remote_repository=REMOTE_REPOSITORY,
         remote_url=REMOTE_URL,
-        parent_ci_status="VERIFIED_SUCCESS",
-        closure_candidate_ci_status=(
-            "REQUIRED_BEFORE_FINAL_ACCEPTANCE"
+        verified_build_branch_ci_status=(
+            "VERIFIED_SUCCESS"
         ),
+        verified_main_ci_status="VERIFIED_SUCCESS",
         branch_protection_status=(
             "UNAVAILABLE_FOR_PRIVATE_REPOSITORY_"
             "ON_CURRENT_ACCOUNT_PLAN"
         ),
         compensating_controls_status=(
-            "BRANCH_FIRST_CI_BEFORE_MAIN_"
-            "AND_LOCAL_PRE_PUSH_GATE"
+            "ACTIVE_AND_VERIFIED"
         ),
         roadmap_id=CONTROLLING_ROADMAP_ID,
         roadmap_url=CONTROLLING_ROADMAP_URL,

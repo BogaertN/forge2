@@ -1,0 +1,67 @@
+{
+  "acceptance_effective_when": "THIS_ACCEPTANCE_COMMIT_IS_ON_MAIN_AND_ITS_MAIN_CI_SUCCEEDS",
+  "accepted_phase": "PHASE_0",
+  "build_id": "FORGE2-PHASE0-BUILD-000C-C-B3",
+  "commit_subject": "Accept Phase 0 clean establishment",
+  "compensating_controls": [
+    "BUILD_BRANCH_REQUIRED",
+    "BUILD_BRANCH_CI_REQUIRED",
+    "FAST_FORWARD_ONLY_MAIN",
+    "TRACKED_LOCAL_PRE_PUSH_GATE",
+    "LOCAL_TESTS_BEFORE_MAIN_PUSH",
+    "CURRENT_VERIFIER_BEFORE_MAIN_PUSH",
+    "EXACT_LOCAL_REMOTE_COMMIT_COMPARISON",
+    "MAIN_CI_REQUIRED",
+    "FAILURE_EVIDENCE_PRESERVATION"
+  ],
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.1 Phase 0 \u2014 Decision, preservation, and clean establishment",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T17:04:03Z",
+  "expected_parent": "2175de8f82c0526e2034533abd4d495f9ca3ed14",
+  "forge1": {
+    "branch": "preservation/current-language-core-20260726",
+    "clean": true,
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge",
+    "read_only": true
+  },
+  "forge1_files_copied": [],
+  "forge1_modified": false,
+  "forge1_runtime_dependency": false,
+  "next_phase": "PHASE_1_IMMUTABLE_CORE_CONTRACTS_AND_STATE_IDENTITIES",
+  "next_phase_entry_authorized": true,
+  "packages_installed": [],
+  "phase0_evidence": {
+    "corrected_build_branch_ci": {
+      "conclusion": "success",
+      "job_id": 90971172015,
+      "run_id": 30572121322
+    },
+    "integrated_main_ci": {
+      "conclusion": "success",
+      "job_id": 90972633469,
+      "run_id": 30572540342
+    },
+    "preserved_failed_ci": {
+      "conclusion": "failure",
+      "job_id": 90967820591,
+      "preserved": true,
+      "run_id": 30571121938
+    }
+  },
+  "phase1_scope_document": "docs/roadmap/PHASE_1_ENTRY_GATE.md",
+  "product_capability_claimed": false,
+  "remote_repository": "BogaertN/forge2",
+  "repository_independent": true,
+  "repository_remains_private": true,
+  "repository_rulesets_status": "UNAVAILABLE_CURRENT_ACCOUNT_PLAN",
+  "schema_version": "aiweb_forge2_phase0_final_acceptance_receipt_v1",
+  "server_branch_protection_status": "UNAVAILABLE_CURRENT_ACCOUNT_PLAN",
+  "source_authority_manifest": "manifests/PHASE_0_FINAL_ACCEPTANCE_SOURCE_AUTHORITY.json",
+  "source_authority_manifest_sha256": "50fdeab1b2ecf6cf53bb4ccbf78abcc3f6603c27ed9ffb31d71b97f90245afe3",
+  "status": "PASS"
+}

@@ -1,8 +1,8 @@
 # AI.Web Forge 2.0
 
 Forge 2.0 is a clean, independent, local-first,
-open-source-first governed software-engineering and
-knowledge agent.
+open-source-first governed engineering and knowledge
+agent.
 
 ## Controlling production roadmap
 
@@ -10,35 +10,40 @@ knowledge agent.
 
 https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0
 
-## Current state
+## Current status
 
-Phase:
+Phase 0:
 
-**0 — Decision, preservation, and clean establishment**
+**ACCEPTED**
 
 Build:
 
-**000C-C-B1 — Phase 0 closure candidate**
+**FORGE2-PHASE0-BUILD-000C-C-B3**
 
-No product capability is claimed.
+Next authorized phase:
 
-The private remote and its first CI run are verified.
+**Phase 1 — Immutable core contracts and state
+identities**
 
-GitHub server-side branch protection and repository
-rulesets are unavailable for this private repository
-under the current account plan.
+Product capabilities currently claimed:
 
-Forge 2.0 remains private. A paid-plan upgrade is not a
-build requirement, and the repository will not be made
-public merely to obtain branch protection.
+**None**
 
-Compensating controls:
+Phase 0 established:
 
-- branch-per-build development;
-- branch CI before main integration;
-- fast-forward-only main integration;
-- tracked local pre-push verification;
-- exact local and remote commit comparison;
-- main CI after integration.
+- an independent `/home/nic/forge2` repository;
+- a private `BogaertN/forge2` remote;
+- verified local and remote main history;
+- GitHub Actions verification;
+- a tracked local pre-push gate;
+- branch-first and fast-forward-only integration;
+- preservation of Forge 1;
+- no Forge 1 runtime dependency;
+- the no-LLM and bounded-machine-learning policy;
+- the open-source-first policy;
+- source-authority and acceptance evidence.
 
-Phase 0 final acceptance is still pending.
+Server-side GitHub branch protection remains unavailable
+for this private repository under the current account
+plan. The limitation is recorded honestly and is not
+represented as server-side protection.

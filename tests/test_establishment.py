@@ -1,4 +1,4 @@
-"""Tests for Phase 0 Build 000C-C-B1."""
+"""Tests for final Phase 0 acceptance."""
 
 from __future__ import annotations
 
@@ -19,10 +19,34 @@ class EstablishmentTests(unittest.TestCase):
     def test_build_identity(self) -> None:
         self.assertEqual(
             BUILD_ID,
-            "FORGE2-PHASE0-BUILD-000C-C-B1",
+            "FORGE2-PHASE0-BUILD-000C-C-B3",
         )
 
-    def test_independent_repository(self) -> None:
+    def test_phase_zero_is_accepted(self) -> None:
+        status = establishment_status()
+
+        self.assertEqual(
+            status.phase,
+            "PHASE_0_ACCEPTED",
+        )
+        self.assertEqual(
+            status.acceptance_status,
+            "PASS",
+        )
+
+    def test_phase_one_entry_is_authorized(self) -> None:
+        status = establishment_status()
+
+        self.assertIs(
+            status.next_phase_entry_authorized,
+            True,
+        )
+        self.assertEqual(
+            status.next_phase,
+            "PHASE_1_IMMUTABLE_CORE_CONTRACTS_AND_STATE_IDENTITIES",
+        )
+
+    def test_repository_is_independent(self) -> None:
         status = establishment_status()
 
         self.assertIs(
@@ -41,21 +65,31 @@ class EstablishmentTests(unittest.TestCase):
             False,
         )
 
-    def test_parent_ci_verified(self) -> None:
+    def test_remote_is_established(self) -> None:
+        status = establishment_status()
+
+        self.assertIs(
+            status.remote_configured,
+            True,
+        )
         self.assertEqual(
-            establishment_status()
-            .parent_ci_status,
+            status.remote_repository,
+            "BogaertN/forge2",
+        )
+
+    def test_ci_is_verified(self) -> None:
+        status = establishment_status()
+
+        self.assertEqual(
+            status.verified_build_branch_ci_status,
+            "VERIFIED_SUCCESS",
+        )
+        self.assertEqual(
+            status.verified_main_ci_status,
             "VERIFIED_SUCCESS",
         )
 
-    def test_candidate_ci_not_preclaimed(self) -> None:
-        self.assertEqual(
-            establishment_status()
-            .closure_candidate_ci_status,
-            "REQUIRED_BEFORE_FINAL_ACCEPTANCE",
-        )
-
-    def test_branch_protection_limitation(self) -> None:
+    def test_protection_disposition_is_honest(self) -> None:
         self.assertEqual(
             establishment_status()
             .branch_protection_status,
@@ -65,14 +99,11 @@ class EstablishmentTests(unittest.TestCase):
             ),
         )
 
-    def test_compensating_controls(self) -> None:
+    def test_compensating_controls_are_active(self) -> None:
         self.assertEqual(
             establishment_status()
             .compensating_controls_status,
-            (
-                "BRANCH_FIRST_CI_BEFORE_MAIN_"
-                "AND_LOCAL_PRE_PUSH_GATE"
-            ),
+            "ACTIVE_AND_VERIFIED",
         )
 
     def test_roadmap_identity(self) -> None:
@@ -86,7 +117,9 @@ class EstablishmentTests(unittest.TestCase):
         environment["PYTHONPATH"] = str(
             ROOT / "src"
         )
-        environment["PYTHONDONTWRITEBYTECODE"] = "1"
+        environment[
+            "PYTHONDONTWRITEBYTECODE"
+        ] = "1"
 
         result = subprocess.run(
             [
@@ -112,7 +145,11 @@ class EstablishmentTests(unittest.TestCase):
 
         self.assertEqual(
             payload["phase"],
-            "PHASE_0_CLOSURE_CANDIDATE",
+            "PHASE_0_ACCEPTED",
+        )
+        self.assertIs(
+            payload["next_phase_entry_authorized"],
+            True,
         )
 
 
