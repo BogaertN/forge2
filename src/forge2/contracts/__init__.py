@@ -32,6 +32,14 @@ from .identity import (
     create_contract_metadata,
     verify_contract_metadata,
 )
+from .successor import (
+    SUCCESSOR_ID_NAMESPACE,
+    SuccessorKind,
+    SuccessorReceipt,
+    SuccessorTransition,
+    create_successor,
+    verify_successor,
+)
 
 
 __all__ = (
@@ -54,13 +62,19 @@ __all__ = (
     "MIN_SAFE_INTEGER",
     "MutableDataclassError",
     "SCHEMA_COMPONENT_MAX",
+    "SUCCESSOR_ID_NAMESPACE",
     "SchemaVersion",
+    "SuccessorKind",
+    "SuccessorReceipt",
+    "SuccessorTransition",
     "UnsupportedCanonicalTypeError",
     "canonical_bytes",
     "canonical_json",
     "canonical_sha256",
     "canonicalize",
     "create_contract_metadata",
+    "create_successor",
     "stable_identifier",
     "verify_contract_metadata",
+    "verify_successor",
 )

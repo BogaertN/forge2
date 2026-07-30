@@ -1,0 +1,103 @@
+{
+  "build_branch": "build/phase1-004a-successor-laws",
+  "build_id": "FORGE2-PHASE1-BUILD-004A",
+  "commit_subject": "Establish append-only contract successor laws",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.2 Phase 1 \u2014 Core contracts and state identities",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T18:33:56Z",
+  "excluded_generated_records": [
+    "manifests/PHASE1_BUILD_004A_SOURCE_AUTHORITY.json",
+    "receipts/PHASE1_BUILD_004A_RECEIPT.json"
+  ],
+  "expected_parent": "195cfecc44ca5829b01309206e2f21f456043e72",
+  "files": [
+    {
+      "executable": false,
+      "path": "docs/contracts/APPEND_ONLY_SUCCESSOR_LAWS_V1.md",
+      "sha256": "4793066a733ac86bb7340c67cb6f9aa8fea049ae70c41c67d77d1e8f4713ad65",
+      "size_bytes": 2599
+    },
+    {
+      "executable": false,
+      "path": "docs/decisions/ADR-0006-APPEND-ONLY-SUCCESSOR-LAWS.md",
+      "sha256": "8c7a4725585fcaad2248cd615a46c1541f58e52fe431b5e098fe0e4c34f46063",
+      "size_bytes": 1345
+    },
+    {
+      "executable": false,
+      "path": "scripts/verify_current.py",
+      "sha256": "e4b30bf84a96855a20c2cc80355c1a9b1efe732efb75a493e62ae0335e655cd6",
+      "size_bytes": 960
+    },
+    {
+      "executable": true,
+      "path": "scripts/verify_phase1_build_004a.py",
+      "sha256": "f715352c9004692d0e47b6a5a07bb324146f6d5bd82b0e25aa8976eadc294bf8",
+      "size_bytes": 17124
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/__init__.py",
+      "sha256": "16f5f66352bb2dc92469b18924185d3a3466c0923dddae1dfe00aec17a8aa2bc",
+      "size_bytes": 1889
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/successor.py",
+      "sha256": "13c158d6850eaab74572a8356152d8923c5bc2526d8189cb0f86652625389a52",
+      "size_bytes": 30424
+    },
+    {
+      "executable": false,
+      "path": "tests/contracts/test_successor.py",
+      "sha256": "66a480df304392c5f36aabe00c845505284a33e3b824b158cbf23348fff70ccb",
+      "size_bytes": 14748
+    }
+  ],
+  "forge1_reference": {
+    "branch": "preservation/current-language-core-20260726",
+    "donor_admitted": false,
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge",
+    "read_only": true
+  },
+  "implementation_basis": {
+    "external_dependency_admitted": false,
+    "forge1_donor_admitted": false,
+    "type": "ORIGINAL_STANDARD_LIBRARY"
+  },
+  "implemented_primitives": [
+    "APPEND_ONLY_SUCCESSOR_CONSTRUCTION",
+    "EXACT_PREDECESSOR_PARENT_BINDING",
+    "STRICTLY_INCREASING_SUCCESSOR_TIME",
+    "BODY_REVISION_LAW",
+    "SCHEMA_REVISION_STEP_LAW",
+    "LIFECYCLE_TRANSITION_LAW",
+    "AUTHORITY_DISPOSITION_TRANSITION_LAW",
+    "DECLARED_EFFECT_REVISION_LAW",
+    "NO_OP_REJECTION",
+    "MIXED_TRANSITION_REJECTION",
+    "DETERMINISTIC_SUCCESSOR_RECEIPT",
+    "SUCCESSOR_VERIFICATION"
+  ],
+  "phase_status": "PHASE_1_IN_PROGRESS",
+  "predecessor_anchors": {
+    "branch_ci_run": 30578719150,
+    "build_id": "FORGE2-PHASE1-BUILD-003A",
+    "canonical_py_sha256": "cdc0ee68d4e3de896a252f8a1f04e5a112842f17acd337a8628fdd19cc19e0b9",
+    "commit": "195cfecc44ca5829b01309206e2f21f456043e72",
+    "identity_py_sha256": "505c01f1fdb5a8166dee234ae1df568a1abbf2d8b5ef20be83a5ffa66939c701",
+    "main_ci_run": 30578992378,
+    "manifest_path": "manifests/PHASE1_BUILD_003A_SOURCE_AUTHORITY.json",
+    "manifest_sha256": "e662d854ef70590a962be5f58b7dc9ec2470d2dd258f5fa4bfaed8d00ba8ee0c",
+    "receipt_path": "receipts/PHASE1_BUILD_003A_RECEIPT.json",
+    "receipt_sha256": "6cd6c80dbde7808032e7cd17d92a0c66f40362d546e4e1da6c962241970336a3"
+  },
+  "product_capability_claimed": false,
+  "runtime_authority_added": false,
+  "schema_version": "aiweb_forge2_phase1_build_004a_source_authority_v1"
+}
