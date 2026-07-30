@@ -1,0 +1,101 @@
+{
+  "build_branch": "build/phase1-003a-contract-identity",
+  "build_id": "FORGE2-PHASE1-BUILD-003A",
+  "commit_subject": "Establish immutable contract identity metadata",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.2 Phase 1 \u2014 Core contracts and state identities",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T18:20:09Z",
+  "excluded_generated_records": [
+    "manifests/PHASE1_BUILD_003A_SOURCE_AUTHORITY.json",
+    "receipts/PHASE1_BUILD_003A_RECEIPT.json"
+  ],
+  "expected_parent": "28482b4a09257b9651d825bd78674dac7abf8885",
+  "files": [
+    {
+      "executable": false,
+      "path": "docs/contracts/CONTRACT_IDENTITY_METADATA_V1.md",
+      "sha256": "09c6f013a132b44e2a2a1d9ad02f09959b428664cda06719bcf4c7ff7d98c8ac",
+      "size_bytes": 2222
+    },
+    {
+      "executable": false,
+      "path": "docs/decisions/ADR-0005-CONTRACT-IDENTITY-METADATA.md",
+      "sha256": "860f2152fefa6c3c346ac0ee493bf6c385cb95b0f40d7cddbe30eb59c3b7140e",
+      "size_bytes": 1573
+    },
+    {
+      "executable": false,
+      "path": "scripts/verify_current.py",
+      "sha256": "ae61bb4ad78bb08a5672692f3271f0b862144630bd7c566eb0e2a92ebc961435",
+      "size_bytes": 960
+    },
+    {
+      "executable": true,
+      "path": "scripts/verify_phase1_build_003a.py",
+      "sha256": "d7324953d87d54dc87c2837ae1e33f51bdb746c34823f79b0696673df922f3eb",
+      "size_bytes": 19070
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/__init__.py",
+      "sha256": "06daa2fabb050a956638da677022dc7877ec8f8a92657136c706ef07d0639e0c",
+      "size_bytes": 1574
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/identity.py",
+      "sha256": "505c01f1fdb5a8166dee234ae1df568a1abbf2d8b5ef20be83a5ffa66939c701",
+      "size_bytes": 24833
+    },
+    {
+      "executable": false,
+      "path": "tests/contracts/test_identity.py",
+      "sha256": "9228948869eff3c5eff54cb474c1b5735de9009a1535b72e6a7f846d6bbe69eb",
+      "size_bytes": 14832
+    }
+  ],
+  "forge1_reference": {
+    "branch": "preservation/current-language-core-20260726",
+    "donor_admitted": false,
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge",
+    "read_only": true
+  },
+  "implementation_basis": {
+    "external_dependency_admitted": false,
+    "forge1_donor_admitted": false,
+    "type": "ORIGINAL_STANDARD_LIBRARY"
+  },
+  "implemented_primitives": [
+    "SCHEMA_VERSION",
+    "CONTRACT_TYPE_IDENTITY",
+    "CONTENT_HASH_BINDING",
+    "CONTRACT_IDENTIFIER",
+    "UTC_CREATION_TIME",
+    "LIFECYCLE_STATE_IDENTITY",
+    "AUTHORITY_DISPOSITION_IDENTITY",
+    "DIRECT_PARENT_REFERENCE",
+    "DECLARED_EFFECT_IDENTITY",
+    "STRUCTURED_VALIDATION_ERROR",
+    "STRUCTURED_INTEGRITY_ERROR"
+  ],
+  "phase_status": "PHASE_1_IN_PROGRESS",
+  "predecessor_anchors": {
+    "branch_ci_run": 30577526111,
+    "build_id": "FORGE2-PHASE1-BUILD-002A",
+    "canonical_py_sha256": "cdc0ee68d4e3de896a252f8a1f04e5a112842f17acd337a8628fdd19cc19e0b9",
+    "commit": "28482b4a09257b9651d825bd78674dac7abf8885",
+    "main_ci_run": 30577780195,
+    "manifest_path": "manifests/PHASE1_BUILD_002A_SOURCE_AUTHORITY.json",
+    "manifest_sha256": "95c223c953fb6bb808b4091a5e7cfb2210a33b1d4621ce08b92410251546758e",
+    "receipt_path": "receipts/PHASE1_BUILD_002A_RECEIPT.json",
+    "receipt_sha256": "019613c5c2d378df7678b6d911e4f6d4a80ab18bac9009f4650e67c736bb1a0e"
+  },
+  "product_capability_claimed": false,
+  "runtime_authority_added": false,
+  "schema_version": "aiweb_forge2_phase1_build_003a_source_authority_v1"
+}

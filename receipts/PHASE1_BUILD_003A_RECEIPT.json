@@ -1,0 +1,60 @@
+{
+  "build_id": "FORGE2-PHASE1-BUILD-003A",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.2 Phase 1 \u2014 Core contracts and state identities",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T18:20:09Z",
+  "declared_runtime_dependencies": [],
+  "expected_parent": "28482b4a09257b9651d825bd78674dac7abf8885",
+  "external_dependency_admitted": false,
+  "forge1_donor_admitted": false,
+  "forge1_modified": false,
+  "forge1_source_copied": false,
+  "implemented": [
+    "SCHEMA_VERSION",
+    "CONTRACT_METADATA",
+    "CONTRACT_REFERENCE",
+    "CONTENT_HASH_VERIFICATION",
+    "DETERMINISTIC_CONTRACT_ID",
+    "LIFECYCLE_STATE_ENUM",
+    "AUTHORITY_STATUS_ENUM",
+    "DECLARED_EFFECT_ENUM",
+    "CANONICAL_EFFECT_ORDER",
+    "DIRECT_PARENT_REFERENCE",
+    "EXPLICIT_VALIDATION_ERRORS",
+    "EXPLICIT_INTEGRITY_ERRORS"
+  ],
+  "not_implemented": [
+    "INPUT_EVENT",
+    "REQUEST_CONTRACT",
+    "ACTION_CONTRACT",
+    "APPEND_ONLY_SUCCESSOR_RULES",
+    "REQUEST_STATE_MACHINE",
+    "ACTION_STATE_MACHINE",
+    "SCHEMA_EVOLUTION_COMPATIBILITY",
+    "AUTHORITY_ENFORCEMENT",
+    "EXECUTION_AUTHORITY",
+    "MEMORY_AUTHORITY",
+    "PRODUCT_CAPABILITY"
+  ],
+  "objective": "ESTABLISH_IMMUTABLE_CONTRACT_IDENTITY_METADATA_AND_DIRECT_ANCESTRY",
+  "packages_installed": [],
+  "phase_status": "PHASE_1_IN_PROGRESS",
+  "predecessor_build": {
+    "branch_ci_job": 90989406341,
+    "branch_ci_run": 30577526111,
+    "build_id": "FORGE2-PHASE1-BUILD-002A",
+    "commit": "28482b4a09257b9651d825bd78674dac7abf8885",
+    "main_ci_job": 90990248054,
+    "main_ci_run": 30577780195
+  },
+  "product_capability_claimed": false,
+  "runtime_authority_added": false,
+  "schema_version": "aiweb_forge2_phase1_build_003a_receipt_v1",
+  "source_authority_manifest": "manifests/PHASE1_BUILD_003A_SOURCE_AUTHORITY.json",
+  "source_authority_manifest_sha256": "e662d854ef70590a962be5f58b7dc9ec2470d2dd258f5fa4bfaed8d00ba8ee0c",
+  "status": "PASS"
+}
