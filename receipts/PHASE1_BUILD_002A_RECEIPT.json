@@ -1,0 +1,63 @@
+{
+  "build_id": "FORGE2-PHASE1-BUILD-002A",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.2 Phase 1 \u2014 Core contracts and state identities",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T17:57:38Z",
+  "declared_runtime_dependencies": [],
+  "donor_qualification": {
+    "build_001c_formal_result": "FAIL_ASSUMPTION_ONLY",
+    "build_001c_r1_result": "PASS",
+    "forge1_schema_surface": "REFERENCE_ONLY_SEMANTIC_FIELD_GUIDANCE",
+    "input_event_class_found": false,
+    "input_event_text_label_found": true
+  },
+  "expected_parent": "270a72674af92f81bad307a1dc926866eeadcdba",
+  "external_dependency_admitted": false,
+  "forge1_donor_admitted": false,
+  "forge1_modified": false,
+  "forge1_source_copied": false,
+  "implemented_primitives": [
+    "STRICT_CANONICAL_NORMALIZATION",
+    "CANONICAL_UTF8_JSON",
+    "SHA256_CONTENT_HASH",
+    "NAMESPACED_STABLE_IDENTIFIER",
+    "UNICODE_NFC_NORMALIZATION",
+    "TIMEZONE_AWARE_DATETIME_NORMALIZATION",
+    "RECURSIVE_ANCESTRY_REJECTION",
+    "AMBIGUOUS_TYPE_REJECTION"
+  ],
+  "not_implemented": [
+    "INPUT_EVENT",
+    "REQUEST_CONTRACT",
+    "CONTRACT_METADATA",
+    "CONTRACT_ANCESTRY",
+    "LIFECYCLE_STATE_MACHINE",
+    "AUTHORITY_STATE_MACHINE",
+    "SUCCESSOR_RULES",
+    "EXECUTION_AUTHORITY",
+    "MEMORY_AUTHORITY",
+    "PRODUCT_CAPABILITY"
+  ],
+  "objective": "ESTABLISH_STRICT_CANONICAL_SERIALIZATION_HASHING_AND_STABLE_IDENTIFIER_PRIMITIVES",
+  "packages_installed": [],
+  "phase_status": "PHASE_1_IN_PROGRESS",
+  "precommit_hygiene_correction": {
+    "commit_created_before_correction": false,
+    "correction_id": "FORGE2-PHASE1-BUILD-002A-R1",
+    "correction_status": "PASS",
+    "failed_check": "git diff --cached --check",
+    "failure": "README.md:65: new blank line at EOF.",
+    "push_performed_before_correction": false,
+    "recorded_utc": "2026-07-30T18:03:52Z",
+    "source_behavior_changed": false
+  },
+  "product_capability_claimed": false,
+  "schema_version": "aiweb_forge2_phase1_build_002a_receipt_v1",
+  "source_authority_manifest": "manifests/PHASE1_BUILD_002A_SOURCE_AUTHORITY.json",
+  "source_authority_manifest_sha256": "95c223c953fb6bb808b4091a5e7cfb2210a33b1d4621ce08b92410251546758e",
+  "status": "PASS"
+}

@@ -47,3 +47,18 @@ Server-side GitHub branch protection remains unavailable
 for this private repository under the current account
 plan. The limitation is recorded honestly and is not
 represented as server-side protection.
+
+## Phase 1 implementation status
+
+Phase 1 is in progress.
+
+Current candidate build:
+
+**FORGE2-PHASE1-BUILD-002A — Canonical contract serialization**
+
+This candidate introduces deterministic internal
+serialization, SHA-256 hashing, and stable namespaced
+identifiers using only the Python standard library.
+
+It does not yet define the Section 8 domain contracts and
+does not claim a product capability.

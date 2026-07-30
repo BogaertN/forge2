@@ -1,0 +1,110 @@
+{
+  "build_branch": "build/phase1-002a-canonical-kernel",
+  "build_id": "FORGE2-PHASE1-BUILD-002A",
+  "commit_subject": "Establish canonical contract serialization",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.2 Phase 1 \u2014 Core contracts and state identities",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T17:57:38Z",
+  "excluded_generated_records": [
+    "manifests/PHASE1_BUILD_002A_SOURCE_AUTHORITY.json",
+    "receipts/PHASE1_BUILD_002A_RECEIPT.json"
+  ],
+  "expected_parent": "270a72674af92f81bad307a1dc926866eeadcdba",
+  "files": [
+    {
+      "executable": false,
+      "path": "README.md",
+      "sha256": "9d2ddb84242556e50fdbd0cdf4b15cb8832fcbc6f9a798f0f6bddf986d8fb8af",
+      "size_bytes": 1638
+    },
+    {
+      "executable": false,
+      "path": "docs/contracts/CANONICAL_SERIALIZATION_V1.md",
+      "sha256": "49fca3e37c4377d45e8fcd5b386cae5146589b93c88384f6f5c654f201d66300",
+      "size_bytes": 1774
+    },
+    {
+      "executable": false,
+      "path": "docs/decisions/ADR-0004-CANONICAL-CONTRACT-SERIALIZATION.md",
+      "sha256": "4301d7c88c57d72418f441490a2758e8ce4de5a495b51c58fdfef1019ef760f9",
+      "size_bytes": 1053
+    },
+    {
+      "executable": false,
+      "path": "scripts/verify_current.py",
+      "sha256": "232d4fc291ef8b5844b26bd0782da51b6b77e2a868172b650f077fb78f02ca84",
+      "size_bytes": 960
+    },
+    {
+      "executable": true,
+      "path": "scripts/verify_phase1_build_002a.py",
+      "sha256": "5ca4402544f56dc74c19b6925b9c0c66a31c7041b104ceada863ad7edf653d34",
+      "size_bytes": 14700
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/__init__.py",
+      "sha256": "67cb161091c78d3fb680d3eeda4ece6d29ec77260320718b671ecd3e159453a7",
+      "size_bytes": 844
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/canonical.py",
+      "sha256": "cdc0ee68d4e3de896a252f8a1f04e5a112842f17acd337a8628fdd19cc19e0b9",
+      "size_bytes": 7524
+    },
+    {
+      "executable": false,
+      "path": "tests/contracts/__init__.py",
+      "sha256": "8b77dc19b109bbfc7152bd46559a2e7352e194eb8e2a80a2050697bd3f22d105",
+      "size_bytes": 45
+    },
+    {
+      "executable": false,
+      "path": "tests/contracts/test_canonical.py",
+      "sha256": "339bd40ced525f1d5e190ae39371b2ada9566ac778d6fe0ec27f80fa544de444",
+      "size_bytes": 7647
+    }
+  ],
+  "forge1_reference": {
+    "branch": "preservation/current-language-core-20260726",
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "input_event_donor": "NONE",
+    "path": "/home/nic/forge",
+    "read_only": true,
+    "schema_surface_classification": "REFERENCE_ONLY_SEMANTIC_FIELD_GUIDANCE"
+  },
+  "implementation_basis": {
+    "external_dependency_admitted": false,
+    "forge1_donor_admitted": false,
+    "standard_library_modules": [
+      "collections.abc",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "hashlib",
+      "json",
+      "re",
+      "typing",
+      "unicodedata"
+    ],
+    "type": "ORIGINAL_STANDARD_LIBRARY"
+  },
+  "phase_status": "PHASE_1_IN_PROGRESS",
+  "precommit_hygiene_correction": {
+    "commit_created_before_correction": false,
+    "correction": "Removed surplus blank line at README end of file while retaining exactly one final newline.",
+    "correction_id": "FORGE2-PHASE1-BUILD-002A-R1",
+    "failed_check": "git diff --cached --check",
+    "failure": "README.md:65: new blank line at EOF.",
+    "push_performed_before_correction": false,
+    "recorded_utc": "2026-07-30T18:03:52Z",
+    "source_behavior_changed": false
+  },
+  "product_capability_claimed": false,
+  "schema_version": "aiweb_forge2_phase1_build_002a_source_authority_v1"
+}
