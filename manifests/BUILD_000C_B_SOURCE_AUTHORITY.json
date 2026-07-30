@@ -1,0 +1,151 @@
+{
+  "build_id": "FORGE2-PHASE0-BUILD-000C-B",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.1 Phase 0 \u2014 Decision, preservation, and clean establishment",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T16:20:25Z",
+  "excluded_generated_records": [
+    "manifests/BUILD_000C_B_SOURCE_AUTHORITY.json",
+    "receipts/BUILD_000C_B_REMOTE_ESTABLISHMENT_RECEIPT.json"
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "8c4d28c96d8f18aed647ff66c0620f0519c7337c03f117bdbc8fa833ae30b9af",
+      "size_bytes": 1481
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "0ebc905dc096f35e6d1ba8e8097e897cd01ad64d0a8d1c74624e4ad9666ed0fa",
+      "size_bytes": 462
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "924686c4de3c553ecbbbaa1bda9f71e49d6b9f09c1541929f8a406a80045ab26",
+      "size_bytes": 1407
+    },
+    {
+      "path": "README.md",
+      "sha256": "55314e57161de21b6cd4c443dea40c2b564c433c2d8a3117e463a47313908b8f",
+      "size_bytes": 1773
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "0f23d9f4fd6302e402d78630c189f0657c2617e14adf8172978a662cb16aec3f",
+      "size_bytes": 1182
+    },
+    {
+      "path": "docs/architecture/SYSTEM_BOUNDARY.md",
+      "sha256": "1eb08d68455e46e45f389d8e2169af0a99af8f356e13644ce9c8aeefb03bfaa3",
+      "size_bytes": 1037
+    },
+    {
+      "path": "docs/decisions/ADR-0001-INDEPENDENT-FORGE2-REPOSITORY.md",
+      "sha256": "b1aec91c824292cc66f8c68eaa48d32478faaa63ebf0a5950eb2fcd85eb15211",
+      "size_bytes": 1375
+    },
+    {
+      "path": "docs/decisions/ADR-0002-PRIVATE-GITHUB-REMOTE.md",
+      "sha256": "c43cf96bd514cf3614524a8c34f126b6b5aa28f809918802c008b018f2b976c5",
+      "size_bytes": 854
+    },
+    {
+      "path": "docs/operations/REMOTE_AND_BRANCH_PROTECTION_PENDING.md",
+      "sha256": "374e880c0027709c6adfc8a2a45758e8003788887114a94e81171fae8263ef26",
+      "size_bytes": 838
+    },
+    {
+      "path": "docs/policies/CODING_STANDARDS.md",
+      "sha256": "79a71002aa751315da6f0e483dc16eb28159c1bc43bec0b69397fbda3ff16961",
+      "size_bytes": 1627
+    },
+    {
+      "path": "docs/policies/FORGE1_DONOR_POLICY.md",
+      "sha256": "8ffc2454d0d80f675d17551b7430420dcce54484580444c636c00270845a79fa",
+      "size_bytes": 768
+    },
+    {
+      "path": "docs/policies/LICENSE_DECISION.md",
+      "sha256": "48be861440f13e2ffe8b948ef595efbe92dcfed5f40aab84d719e44e5436bdbb",
+      "size_bytes": 881
+    },
+    {
+      "path": "docs/policies/NO_LLM_AND_ML_BOUNDARY.md",
+      "sha256": "c12f4c30dab3fbdf4b034661ae24ee4dab830e311d9924f99bc171a2246e2455",
+      "size_bytes": 1311
+    },
+    {
+      "path": "docs/policies/OPEN_SOURCE_FIRST_POLICY.md",
+      "sha256": "2764b8d9e25e38bb69894de80900b93510e44f4443928a1740ade650208c7573",
+      "size_bytes": 1231
+    },
+    {
+      "path": "docs/roadmap/CONTROLLING_ROADMAP_REFERENCE.md",
+      "sha256": "727a46e734d1dc286c89b57dbb1b40a80bba685b7b4f1e898a8dc20976870460",
+      "size_bytes": 1147
+    },
+    {
+      "path": "manifests/BUILD_000B_SOURCE_AUTHORITY.json",
+      "sha256": "030360b818a220e58e9a1f7932ae416e95e1c9bae1943a93144afc53fb8a60bc",
+      "size_bytes": 4443
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "95597faf8b1c180de4072d41f18960d45bffe3f0282d1a0bcf0a22ea84914fa9",
+      "size_bytes": 578
+    },
+    {
+      "path": "receipts/BUILD_000B_ESTABLISHMENT_RECEIPT.json",
+      "sha256": "8d4acd8dd8287fc401d6e560ade382f7636d435c6487fdfdab1588e3719dfe01",
+      "size_bytes": 2751
+    },
+    {
+      "path": "scripts/verify_build_000_establishment.py",
+      "sha256": "cffe6e54be85e8d80e71b350b125f6cfd2a481f90cd8b65a5a6f632685b8ea22",
+      "size_bytes": 13646
+    },
+    {
+      "path": "scripts/verify_build_000c_remote.py",
+      "sha256": "4b9dac9404b665c4284730d3ffe0174de314e4c06baa3ce9ee82bef0a01eb920",
+      "size_bytes": 13220
+    },
+    {
+      "path": "src/forge2/__init__.py",
+      "sha256": "00741a46bedb951a571fd3027acb496b9c95f385c7fb6da8df95ee001c6cbd10",
+      "size_bytes": 280
+    },
+    {
+      "path": "src/forge2/__main__.py",
+      "sha256": "d1ce8e3776ddd4a197b2b1fc51032595eeb8cc78c6a735bc9b5ec6416f8f36a8",
+      "size_bytes": 396
+    },
+    {
+      "path": "src/forge2/establishment.py",
+      "sha256": "3a077a89cdccfdb2f9ae2e22562296d5ce8e11e76fbc24892b7895e6f7200d6c",
+      "size_bytes": 1958
+    },
+    {
+      "path": "tests/test_establishment.py",
+      "sha256": "d5a8964d48c19b89a6cc2e0e9ff75966ec36f2bbf488de18ddd3dfdc3bf8fdc3",
+      "size_bytes": 2862
+    }
+  ],
+  "forge1_reference": {
+    "branch": "preservation/current-language-core-20260726",
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge",
+    "read_only": true
+  },
+  "forge2": {
+    "branch": "main",
+    "parent": "ac1786a6ae0a27c9bc1d215d32e1f80b479dcef6",
+    "path": "/home/nic/forge2",
+    "remote_repository": "BogaertN/forge2",
+    "remote_visibility": "PRIVATE"
+  },
+  "product_capability_claimed": false,
+  "schema_version": "aiweb_forge2_source_authority_v1"
+}

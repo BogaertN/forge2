@@ -1,52 +1,63 @@
 # AI.Web Forge 2.0
 
-Forge 2.0 is a clean, independent implementation of a local-first,
-open-source-first, governed software engineering and knowledge agent.
+Forge 2.0 is a clean, independent implementation of a
+local-first, open-source-first, governed software engineering
+and knowledge agent.
 
-This repository is governed by:
+## Controlling production roadmap
 
 **AI.Web Forge 2.0 Production Build Bible — Open-Source-First Non-LLM Self-Constructing Engineering Agent**
 
-Controlling Google Doc:
-
 https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0
 
-## Current build state
+## Current state
 
-Phase: **0 — Decision, preservation, and clean establishment**
+Phase:
 
-Build: **000B — Local repository establishment**
+**0 — Decision, preservation, and clean establishment**
 
-Current capability status: **No product capability is claimed.**
+Build:
 
-The only executable surface established by this build reports repository
-establishment metadata. It does not interpret natural language, execute
-tools, modify projects, search the internet, install packages, or perform
-self-construction.
+**000C-B — Private GitHub remote establishment**
+
+Private remote:
+
+**BogaertN/forge2**
+
+Current capability status:
+
+**No product capability is claimed.**
+
+Forge 2.0 currently provides only establishment identity,
+governance documents, source-authority evidence, tests, and
+continuous-integration configuration.
+
+It does not yet interpret natural language, control a terminal,
+install tools, modify projects, conduct research, perform
+mathematics, run simulations, or construct itself.
 
 ## Product direction
 
-Forge 2.0 will provide a Codex-like engineering workflow without using a
-large language model as the authoritative meaning, planning, coding,
-tool-selection, verification, permission, or execution component.
+Forge 2.0 will provide a Codex-like engineering workflow without
+using a large language model as authoritative meaning, planning,
+coding, tool-selection, verification, permission, or execution.
 
-Forge 2.0 will prefer qualified open-source capabilities before writing
-original implementations.
+Forge 2.0 will qualify and reuse open-source capabilities before
+writing original implementations.
 
-Small traditional machine-learning models may produce classification and
-ranking candidates. They do not possess raw terminal or mutation authority.
+Small traditional machine-learning models may produce bounded
+classification and ranking candidates. They do not receive raw
+terminal or mutation authority.
 
-## Repository relationship
+## Forge 1 relationship
 
-This repository is independent from Forge 1.
+Forge 1 remains a protected read-only reference and donor source.
 
-Forge 1 is preserved as read-only reference, behavioral ancestry, test
-evidence, and a possible donor source for individually qualified modules.
+Forge 2.0 does not import Forge 1 or require Forge 1 to run.
 
-Forge 2.0 must not import Forge 1's main module or require Forge 1 to run.
+## Phase 0 remaining work
 
-## Development status
-
-The next roadmap phase is Phase 1: immutable core contracts and state
-identities. Phase 1 must not begin until Phase 0's remote, CI, and
-establishment requirements are completed and accepted.
+- inspect the first GitHub Actions run;
+- record CI evidence;
+- apply available main-branch protection;
+- record the final Phase 0 acceptance receipt.

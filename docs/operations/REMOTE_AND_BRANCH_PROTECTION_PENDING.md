@@ -1,29 +1,43 @@
 # Remote and Branch Protection Status
 
-Build: FORGE2-PHASE0-BUILD-000B
+Build: FORGE2-PHASE0-BUILD-000C-B
 
-Local repository: established
+Local repository:
 
-Planned remote: BogaertN/forge2
+`/home/nic/forge2`
 
-Remote status: pending local GitHub CLI authentication
+Private remote repository:
 
-Planned visibility: private until the Decision Owner records a different
-decision.
+`BogaertN/forge2`
 
-Main-branch protection: pending remote creation
+Remote URL:
 
-Required follow-up:
+https://github.com/BogaertN/forge2
 
-1. Authenticate the local GitHub CLI.
-2. Confirm the authenticated GitHub identity.
-3. Create the private remote repository without initializing remote files.
-4. Add the exact origin.
-5. Push local main.
-6. Confirm GitHub Actions execution.
-7. Apply available branch-protection controls.
-8. Record the remote and CI receipts.
-9. Re-run the Phase 0 acceptance gate.
+Remote establishment:
 
-No product phase may be claimed complete while these items remain
-pending.
+**ESTABLISHED BY BUILD 000C-B**
+
+First push:
+
+**PERFORMED AFTER THE BUILD 000C-B COMMIT**
+
+CI status:
+
+**PENDING INSPECTION IN BUILD 000C-C**
+
+Main-branch protection:
+
+**PENDING BUILD 000C-C**
+
+## Remaining Phase 0 work
+
+1. Inspect the exact GitHub Actions run for the pushed commit.
+2. Record the run, jobs, steps, and conclusion.
+3. Apply available main-branch protection.
+4. Confirm local and remote main are identical.
+5. Produce the final Phase 0 acceptance receipt.
+6. Update establishment status.
+7. Commit and push the Phase 0 closure record.
+
+No product phase is complete until these checks pass.

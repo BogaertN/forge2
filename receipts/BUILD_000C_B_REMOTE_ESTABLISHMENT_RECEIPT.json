@@ -1,0 +1,37 @@
+{
+  "branch_protection_deferred_to_build": "000C-C",
+  "build_id": "FORGE2-PHASE0-BUILD-000C-B",
+  "ci_inspection_deferred_to_build": "000C-C",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.1 Phase 0 \u2014 Decision, preservation, and clean establishment",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T16:20:28Z",
+  "forge1": {
+    "branch": "preservation/current-language-core-20260726",
+    "clean_before": true,
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge"
+  },
+  "forge1_files_copied": [],
+  "forge1_modified": false,
+  "forge2": {
+    "branch": "main",
+    "parent": "ac1786a6ae0a27c9bc1d215d32e1f80b479dcef6",
+    "path": "/home/nic/forge2"
+  },
+  "origin_url": "https://github.com/BogaertN/forge2.git",
+  "packages_installed": [],
+  "product_capability_claimed": false,
+  "push_performed_at_receipt_creation": false,
+  "remote_created": true,
+  "remote_repository": "BogaertN/forge2",
+  "remote_url": "https://github.com/BogaertN/forge2",
+  "remote_visibility": "PRIVATE",
+  "schema_version": "aiweb_forge2_remote_establishment_receipt_v1",
+  "source_authority_manifest": "manifests/BUILD_000C_B_SOURCE_AUTHORITY.json",
+  "source_authority_manifest_sha256": "9f5c8942f2787ae8b6c7dc39bf6115f92526e6fef01d70dad572ae73a0968f05",
+  "status": "PASS"
+}

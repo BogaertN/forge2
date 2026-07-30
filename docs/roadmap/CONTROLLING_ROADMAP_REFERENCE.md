@@ -26,26 +26,25 @@ Decision Owner:
 
 25.1 Phase 0 — Decision, preservation, and clean establishment
 
+## Current build
+
+FORGE2-PHASE0-BUILD-000C-B
+
 ## Authority law
 
-This Google Doc controls Forge 2.0 architecture and build sequence until
-the Decision Owner records an explicit superseding decision.
+The Google Doc controls Forge 2.0 architecture and build sequence
+until the Decision Owner records an explicit superseding decision.
 
-Repository documents may describe, implement, test, and preserve that
-authority. They do not silently supersede the controlling roadmap.
+Repository documents may implement and preserve that authority.
+They do not silently supersede it.
 
-Any roadmap change must preserve:
+## Build 000C-B scope
 
-- predecessor identity;
-- reason for change;
-- affected phases;
-- affected contracts;
-- migration consequences;
-- Decision Owner authorization.
+This build establishes the private GitHub repository, configures
+the local origin, pushes the verified main branch, and triggers
+the first remote CI run.
 
-## Build 000B scope
+CI-result inspection, branch protection, and final Phase 0
+acceptance remain separate Build 000C-C work.
 
-This build creates only the independent local repository and its initial
-governance, source-authority, tests, and CI skeleton.
-
-It does not claim a product capability.
+No product capability is claimed.

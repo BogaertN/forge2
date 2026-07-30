@@ -1,4 +1,4 @@
-name: Forge 2.0 Establishment CI
+name: Forge 2.0 Phase 0 CI
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  establishment:
+  phase-zero:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -28,6 +28,8 @@ jobs:
           python - <<'PY'
           from pathlib import Path
 
+          count = 0
+
           for root in (
               Path("src"),
               Path("tests"),
@@ -39,8 +41,12 @@ jobs:
                       str(path),
                       "exec",
                   )
+                  count += 1
 
-          print("Python source compilation: PASS")
+          print(
+              f"Python source compilation: PASS "
+              f"({count} files)"
+          )
           PY
 
       - name: Run establishment tests
@@ -53,10 +59,10 @@ jobs:
             -p 'test_*.py' \
             -v
 
-      - name: Run Build 000B verifier
+      - name: Run Build 000C-B verifier
         env:
           PYTHONPATH: src
           PYTHONDONTWRITEBYTECODE: "1"
         run: |
-          python scripts/verify_build_000_establishment.py \
-            --mode committed
+          python scripts/verify_build_000c_remote.py \
+            --mode remote

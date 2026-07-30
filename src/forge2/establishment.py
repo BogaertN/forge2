@@ -1,7 +1,7 @@
 """Phase 0 establishment identity.
 
-This module reports repository-establishment state only. It does not
-provide a product capability.
+This module reports repository-establishment state only.
+It does not provide a product capability.
 """
 
 from __future__ import annotations
@@ -10,13 +10,15 @@ from dataclasses import asdict, dataclass
 from typing import Any, Final
 
 
-BUILD_ID: Final[str] = "FORGE2-PHASE0-BUILD-000B"
+BUILD_ID: Final[str] = "FORGE2-PHASE0-BUILD-000C-B"
 FORGE2_VERSION: Final[str] = "0.0.0"
 STATUS_SCHEMA_VERSION: Final[str] = (
-    "aiweb_forge2_establishment_status_v1"
+    "aiweb_forge2_establishment_status_v2"
 )
 CONTROLLING_ROADMAP_ID: Final[str] = "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
 CONTROLLING_ROADMAP_URL: Final[str] = "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+REMOTE_REPOSITORY: Final[str] = "BogaertN/forge2"
+REMOTE_URL: Final[str] = "https://github.com/BogaertN/forge2"
 
 
 @dataclass(frozen=True, slots=True)
@@ -29,6 +31,10 @@ class EstablishmentStatus:
     forge1_runtime_dependency: bool
     product_capability_claimed: bool
     remote_configured: bool
+    remote_repository: str
+    remote_url: str
+    ci_status: str
+    branch_protection_status: str
     roadmap_id: str
     roadmap_url: str
 
@@ -37,17 +43,21 @@ class EstablishmentStatus:
 
 
 def establishment_status() -> EstablishmentStatus:
-    """Return immutable Phase 0 repository-establishment status."""
+    """Return immutable Phase 0 establishment status."""
 
     return EstablishmentStatus(
         schema_version=STATUS_SCHEMA_VERSION,
         build_id=BUILD_ID,
         forge2_version=FORGE2_VERSION,
-        phase="PHASE_0_LOCAL_ESTABLISHMENT",
+        phase="PHASE_0_REMOTE_ESTABLISHED",
         repository_independent=True,
         forge1_runtime_dependency=False,
         product_capability_claimed=False,
-        remote_configured=False,
+        remote_configured=True,
+        remote_repository=REMOTE_REPOSITORY,
+        remote_url=REMOTE_URL,
+        ci_status="PENDING_REMOTE_RUN_INSPECTION",
+        branch_protection_status="PENDING_BUILD_000C_C",
         roadmap_id=CONTROLLING_ROADMAP_ID,
         roadmap_url=CONTROLLING_ROADMAP_URL,
     )
