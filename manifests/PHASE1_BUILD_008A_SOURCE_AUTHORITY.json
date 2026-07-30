@@ -1,0 +1,162 @@
+{
+  "automatic_candidate_selection_added": false,
+  "build_branch": "build/phase1-008a-request-contract",
+  "build_id": "FORGE2-PHASE1-BUILD-008A",
+  "candidate_selection_policy_added": false,
+  "candidate_selection_recording_added": true,
+  "clarification_resolution_added": false,
+  "commit_subject": "Establish immutable RequestContract",
+  "context_builder_added": false,
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "sections": [
+      "3.2 Source custody",
+      "8. Contract Architecture",
+      "25.12 Phase 11 \u2014 Request compiler"
+    ],
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "corrected_utc": "2026-07-30T23:34:13Z",
+  "correction_records": [
+    {
+      "build_id": "FORGE2-PHASE1-BUILD-008A-R2",
+      "path": "receipts/PHASE1_BUILD_008A_R2_CORRECTION_RECEIPT.json",
+      "sha256": "b85862a7623ad1b00248cd033a04b1c517359e92d4ecc086c0d968a236dfb8a7",
+      "status": "PASS"
+    }
+  ],
+  "created_utc": "2026-07-30T23:14:10Z",
+  "excluded_generated_records": [
+    "manifests/PHASE1_BUILD_008A_SOURCE_AUTHORITY.json",
+    "receipts/PHASE1_BUILD_008A_RECEIPT.json"
+  ],
+  "expected_parent": "340df5c41692f916649eb943cacf0303125024c4",
+  "explicitly_not_implemented": [
+    "AUTOMATIC_CANDIDATE_SELECTION",
+    "CANDIDATE_SELECTION_POLICY",
+    "REQUEST_COMPILER_RUNTIME",
+    "CONFLICT_RESOLUTION",
+    "EXPECTED_RESULT_INFERENCE",
+    "SIDE_EFFECT_INFERENCE",
+    "FRESHNESS_INFERENCE",
+    "CAPABILITY_INFERENCE",
+    "CLARIFICATION_RESOLUTION",
+    "CORRECTION_HOOKS",
+    "CONTEXT_BUILDER",
+    "TASK_PLANNER",
+    "TOOL_SELECTION",
+    "COMMAND_CONSTRUCTION",
+    "REQUEST_TRANSITION_POLICY",
+    "EXECUTION_AUTHORITY",
+    "MEMORY_AUTHORITY"
+  ],
+  "files": [
+    {
+      "executable": false,
+      "path": "docs/contracts/REQUEST_CONTRACT_V1.md",
+      "sha256": "36b4ad1540c0549429da9b08578fb2afa3202b08f9816e5a3cc271a650f89d8e",
+      "size_bytes": 2871
+    },
+    {
+      "executable": false,
+      "path": "docs/decisions/ADR-0010-IMMUTABLE-REQUEST-CONTRACT.md",
+      "sha256": "d415ed1100f1dc43de06b634f682723df996345a45201d54df9045464fe84c86",
+      "size_bytes": 2462
+    },
+    {
+      "executable": false,
+      "path": "receipts/PHASE1_BUILD_008A_R2_CORRECTION_RECEIPT.json",
+      "sha256": "b85862a7623ad1b00248cd033a04b1c517359e92d4ecc086c0d968a236dfb8a7",
+      "size_bytes": 2575
+    },
+    {
+      "executable": false,
+      "path": "scripts/verify_current.py",
+      "sha256": "9b9928fba1c43e5a972b94738e110f2c3dc4433af2542cd2c9acf8b015c545f3",
+      "size_bytes": 960
+    },
+    {
+      "executable": true,
+      "path": "scripts/verify_phase1_build_008a.py",
+      "sha256": "8fbcdf16d2de5f489b794938944a684c34b438ee3f6588b980ea66f381ac9856",
+      "size_bytes": 27603
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/__init__.py",
+      "sha256": "72f949414d0c317bd074e12b77fbf95022c6635878850e97ced11a8b9fc795b5",
+      "size_bytes": 5564
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/request_contract.py",
+      "sha256": "d099b66e76a51493a39f95812b140dfce912095251db472e25aeef5ceb913c67",
+      "size_bytes": 51876
+    },
+    {
+      "executable": false,
+      "path": "tests/contracts/test_request_contract.py",
+      "sha256": "47f04d94333891097dbf6ed130b48bbeda025b9fdb2ddf01b2b4523296fe53e2",
+      "size_bytes": 37042
+    }
+  ],
+  "forge1_reference": {
+    "branch": "preservation/current-language-core-20260726",
+    "donor_admitted": false,
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge",
+    "read_only": true
+  },
+  "implementation_basis": {
+    "external_dependency_admitted": false,
+    "forge1_donor_admitted": false,
+    "type": "ORIGINAL_STANDARD_LIBRARY"
+  },
+  "implemented_primitives": [
+    "CANDIDATE_SELECTION_RECORD",
+    "CANDIDATE_SELECTION_IDENTITY",
+    "REQUEST_STATEMENT",
+    "REQUEST_STATEMENT_IDENTITY",
+    "REQUEST_GOALS",
+    "REQUEST_CONSTRAINTS",
+    "REQUEST_DESIRED_RESULT",
+    "REQUEST_UNCERTAINTY_PRESERVATION",
+    "REQUEST_CONTRACT",
+    "INPUT_EVENT_REFERENCE_BINDING",
+    "CLASSIFICATION_CANDIDATE_SET_REFERENCE_BINDING",
+    "SELECTED_EVIDENCE_CUSTODY",
+    "REQUIRED_REQUEST_KIND_SELECTION",
+    "REQUIRED_EXPECTED_RESULT_SELECTION",
+    "REQUIRED_SIDE_EFFECT_SELECTION",
+    "CANONICAL_ROUND_TRIP",
+    "HIDDEN_FIELD_REJECTION",
+    "NO_REQUEST_AUTHORITY",
+    "NO_REQUEST_SIDE_EFFECTS"
+  ],
+  "phase_status": "PHASE_1_IN_PROGRESS",
+  "predecessor_anchors": {
+    "branch_ci_run": 30594343944,
+    "build_id": "FORGE2-PHASE1-BUILD-007A",
+    "canonical_py_sha256": "cdc0ee68d4e3de896a252f8a1f04e5a112842f17acd337a8628fdd19cc19e0b9",
+    "classification_candidate_py_sha256": "48f1f2c65c0f8098ed7efb212a2a3aef0f17a4d29864c6ce664cacc17e731f16",
+    "codec_py_sha256": "cbda64be337caf3e1156f36bdd8d77bb88861a605efc1c04369dd1672c1dacfe",
+    "commit": "340df5c41692f916649eb943cacf0303125024c4",
+    "frozen_value_py_sha256": "44a5bf7676ac4e862d2809e889d8efb9c450e4ae1dedb052395152bd19631672",
+    "identity_py_sha256": "505c01f1fdb5a8166dee234ae1df568a1abbf2d8b5ef20be83a5ffa66939c701",
+    "input_event_py_sha256": "2c93859ec87858d97b090cbf904ecdcce588b2c8f9b64e93f8ef9d940f0070c5",
+    "main_ci_run": 30594619825,
+    "manifest_path": "manifests/PHASE1_BUILD_007A_SOURCE_AUTHORITY.json",
+    "manifest_sha256": "b95e35805f598c7aa9e2f8483bbd99e7799d856843f9bf076e93a0a433c46760",
+    "receipt_path": "receipts/PHASE1_BUILD_007A_RECEIPT.json",
+    "receipt_sha256": "bc7cae4bb29f06dcb59e66bb2b16533e43f1c487d91ed000e869b84d224dd3c5",
+    "request_state_py_sha256": "70b49f90f4e3d991a0f31ff7472c69c5b7331ec26e6e90601b377ef058678bbd",
+    "successor_py_sha256": "13c158d6850eaab74572a8356152d8923c5bc2526d8189cb0f86652625389a52"
+  },
+  "product_capability_claimed": false,
+  "request_compiler_runtime_added": false,
+  "request_contract_added": true,
+  "request_transition_policy_defined": false,
+  "runtime_authority_added": false,
+  "schema_version": "aiweb_forge2_phase1_build_008a_source_authority_v1"
+}

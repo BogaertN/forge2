@@ -1,0 +1,71 @@
+{
+  "automatic_candidate_selection_added": false,
+  "build_id": "FORGE2-PHASE1-BUILD-008A-R2",
+  "corrected_build_id": "FORGE2-PHASE1-BUILD-008A",
+  "correction": "Move verify_classification_candidate_set after the RequestContract-to-InputEvent reference comparison.",
+  "created_utc": "2026-07-30T23:34:13Z",
+  "diagnostic": {
+    "branch_pushed": false,
+    "build_id": "FORGE2-PHASE1-BUILD-008A-R1-D1",
+    "commit_created": false,
+    "source_modified": false,
+    "status": "PASS"
+  },
+  "expected_error_code": "request_input_event_mismatch",
+  "failed_gate": "BUILD_008A_UNIT_TESTS",
+  "failed_test": "contracts.test_request_contract.RequestContractTests.test_wrong_input_event_rejected",
+  "failure_evidence": {
+    "failed_r1_operator": {
+      "branch_pushed": false,
+      "commit_created": false,
+      "preserved": true,
+      "process_code": 30
+    },
+    "original_build_008a": {
+      "branch_pushed": false,
+      "commit_created": false,
+      "failed_count": 1,
+      "preserved": true,
+      "process_code": 61,
+      "test_count": 184
+    }
+  },
+  "first_correction_operator_failure": {
+    "branch_pushed": false,
+    "build_id": "FORGE2-PHASE1-BUILD-008A-R1",
+    "cause": "The exact text matcher used eight leading spaces while the source uses four.",
+    "commit_created": false,
+    "process_code": 30,
+    "source_modified": false
+  },
+  "forge1_modified": false,
+  "main_advanced": false,
+  "observed_error_code": "classification_input_event_mismatch",
+  "request_compiler_runtime_added": false,
+  "root_cause": "verify_request_contract checked the ClassificationCandidateSet against the supplied InputEvent before checking the RequestContract's own InputEvent reference.",
+  "runtime_authority_added": false,
+  "schema_version": "aiweb_forge2_phase1_build_008a_r2_correction_receipt_v1",
+  "source_paths_changed_by_correction": [
+    "src/forge2/contracts/request_contract.py"
+  ],
+  "source_sha256_after": "d099b66e76a51493a39f95812b140dfce912095251db472e25aeef5ceb913c67",
+  "source_sha256_before": "104ed4fb87c1c181ed7ed53af4f347296d270b92f266c5f40d0977e4651093e0",
+  "status": "PASS",
+  "test_expectation_weakened": false,
+  "test_source_changed_by_correction": false,
+  "verification": {
+    "branch_ci": "EXTERNAL_EVIDENCE_REQUIRED_AFTER_PUSH",
+    "committed_verifier": "PENDING_COMMIT",
+    "precommit_verifier": "PASS",
+    "python_compilation": {
+      "file_count": 36,
+      "status": "PASS"
+    },
+    "source_verifier": "PASS",
+    "unit_tests": {
+      "failed_count": 0,
+      "status": "PASS",
+      "test_count": 184
+    }
+  }
+}

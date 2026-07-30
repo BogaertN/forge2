@@ -1,0 +1,88 @@
+{
+  "automatic_candidate_selection_added": false,
+  "build_id": "FORGE2-PHASE1-BUILD-008A",
+  "candidate_selection_policy_added": false,
+  "candidate_selection_recording_added": true,
+  "clarification_resolution_added": false,
+  "context_builder_added": false,
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "sections": [
+      "3.2 Source custody",
+      "8. Contract Architecture",
+      "25.12 Phase 11 \u2014 Request compiler"
+    ],
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "corrected_utc": "2026-07-30T23:34:13Z",
+  "correction_records": [
+    {
+      "build_id": "FORGE2-PHASE1-BUILD-008A-R2",
+      "path": "receipts/PHASE1_BUILD_008A_R2_CORRECTION_RECEIPT.json",
+      "sha256": "b85862a7623ad1b00248cd033a04b1c517359e92d4ecc086c0d968a236dfb8a7",
+      "status": "PASS"
+    }
+  ],
+  "correction_status": "PASS",
+  "created_utc": "2026-07-30T23:14:10Z",
+  "declared_runtime_dependencies": [],
+  "expected_parent": "340df5c41692f916649eb943cacf0303125024c4",
+  "external_dependency_admitted": false,
+  "forge1_donor_admitted": false,
+  "forge1_modified": false,
+  "forge1_source_copied": false,
+  "implemented": [
+    "CANDIDATE_SELECTION_RECORD",
+    "REQUEST_STATEMENT",
+    "REQUEST_CONTRACT",
+    "EVIDENCE_BOUND_GOALS",
+    "EVIDENCE_BOUND_CONSTRAINTS",
+    "EVIDENCE_BOUND_DESIRED_RESULT",
+    "REQUIRED_CLASSIFICATION_DIMENSIONS",
+    "EXACT_UNCERTAINTY_PRESERVATION",
+    "SOURCE_CONTRACT_BINDING",
+    "REQUEST_CONTRACT_ROUND_TRIP",
+    "HIDDEN_FIELD_REJECTION",
+    "NO_AUTHORITY",
+    "NO_SIDE_EFFECTS"
+  ],
+  "not_implemented": [
+    "AUTOMATIC_CANDIDATE_SELECTION",
+    "REQUEST_COMPILER_RUNTIME",
+    "CONFLICT_RESOLUTION_POLICY",
+    "CLARIFICATION_RESOLUTION",
+    "CONTEXT_MANIFEST",
+    "CONTEXT_BUILDER",
+    "CAPABILITY_REQUIREMENT",
+    "TASK_PLAN",
+    "ACTION_CONTRACT",
+    "REQUEST_STATE_TRANSITION_MATRIX",
+    "REQUEST_STATE_TRANSITION_RECEIPT",
+    "REQUEST_STATE_MACHINE",
+    "AUTHORITY_ENFORCEMENT",
+    "EXECUTION_AUTHORITY",
+    "MEMORY_AUTHORITY",
+    "PRODUCT_CAPABILITY"
+  ],
+  "objective": "ESTABLISH_IMMUTABLE_EVIDENCE_BOUND_AUTHORITY_NEUTRAL_REQUEST_CONTRACT",
+  "packages_installed": [],
+  "phase_status": "PHASE_1_IN_PROGRESS",
+  "predecessor_build": {
+    "branch_ci_job": 91043330889,
+    "branch_ci_run": 30594343944,
+    "build_id": "FORGE2-PHASE1-BUILD-007A",
+    "commit": "340df5c41692f916649eb943cacf0303125024c4",
+    "main_ci_job": 91044174541,
+    "main_ci_run": 30594619825
+  },
+  "product_capability_claimed": false,
+  "request_compiler_runtime_added": false,
+  "request_contract_added": true,
+  "request_transition_policy_defined": false,
+  "runtime_authority_added": false,
+  "schema_version": "aiweb_forge2_phase1_build_008a_receipt_v1",
+  "source_authority_manifest": "manifests/PHASE1_BUILD_008A_SOURCE_AUTHORITY.json",
+  "source_authority_manifest_sha256": "2b3348285d819d0d3751d7f8d6ebc4fa0596c797e686a2594d1f243264324be7",
+  "status": "PASS"
+}
