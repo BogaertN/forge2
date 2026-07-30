@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiweb-forge2"
+version = "0.0.0"
+description = "AI.Web Forge 2.0 governed agent kernel"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+authors = [
+  {name = "Nicholas Bogaert"}
+]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: POSIX :: Linux"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,62 @@
+name: Forge 2.0 Establishment CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  establishment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile Python sources in memory
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          for root in (
+              Path("src"),
+              Path("tests"),
+              Path("scripts"),
+          ):
+              for path in sorted(root.rglob("*.py")):
+                  compile(
+                      path.read_text(encoding="utf-8"),
+                      str(path),
+                      "exec",
+                  )
+
+          print("Python source compilation: PASS")
+          PY
+
+      - name: Run establishment tests
+        env:
+          PYTHONPATH: src
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          python -m unittest discover \
+            -s tests \
+            -p 'test_*.py' \
+            -v
+
+      - name: Run Build 000B verifier
+        env:
+          PYTHONPATH: src
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          python scripts/verify_build_000_establishment.py \
+            --mode committed

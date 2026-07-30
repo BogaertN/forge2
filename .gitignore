@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node and UI
+node_modules/
+dist/
+build/
+
+# Local runtime state
+.forge2/
+data/
+logs/
+cache/
+quarantine/
+workspaces/
+backups/
+evidence/
+
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# Editors and operating systems
+.idea/
+.vscode/
+*~
+.DS_Store
+
+# Large generated artifacts
+*.tar
+*.tar.gz
+*.zip

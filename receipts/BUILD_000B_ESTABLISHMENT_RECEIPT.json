@@ -1,0 +1,73 @@
+{
+  "authored_file_count": 20,
+  "build_id": "FORGE2-PHASE0-BUILD-000B",
+  "created_utc": "2026-07-30T16:04:42Z",
+  "forge1_files_copied": [],
+  "forge1_modified": false,
+  "forge1_reference": {
+    "branch": "preservation/current-language-core-20260726",
+    "clean_before": true,
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge",
+    "read_only": true
+  },
+  "forge2": {
+    "branch": "main",
+    "independent_repository": true,
+    "path": "/home/nic/forge2"
+  },
+  "git_remote_actions": [],
+  "manifested_file_count": 20,
+  "network_actions": [],
+  "objective": "Establish Forge 2.0 as an independent local repository without changing Forge 1.",
+  "packages_installed": [],
+  "product_capability_claimed": false,
+  "remaining_phase0_work": [
+    "Authenticate local GitHub CLI",
+    "Create private BogaertN/forge2 remote",
+    "Push main",
+    "Confirm GitHub Actions CI",
+    "Apply available main-branch protection",
+    "Record remote and CI receipts"
+  ],
+  "remote_configured": false,
+  "remote_pending_reason": "Local GitHub CLI authentication is required before Build 000C.",
+  "roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.1 Phase 0 \u2014 Decision, preservation, and clean establishment",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "schema_version": "aiweb_forge2_establishment_receipt_v1",
+  "source_authority_manifest": "manifests/BUILD_000B_SOURCE_AUTHORITY.json",
+  "source_authority_manifest_sha256": "030360b818a220e58e9a1f7932ae416e95e1c9bae1943a93144afc53fb8a60bc",
+  "status": "PASS",
+  "tests": [
+    {
+      "file_count": 5,
+      "name": "python_source_compilation",
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "name": "unittest_establishment_suite",
+      "status": "PASS",
+      "stderr_sha256": "87ee08fab1cbf56fa9286b95cb68b777015e4e5f98701a312a6b0527911dca13",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 0,
+      "name": "independent_package_execution",
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "baa0df9cdd06d6696851c2afe9491cd2ced2b36981c069fa2ca8b86d374d262c"
+    },
+    {
+      "exit_code": 0,
+      "name": "source_mode_verifier",
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c4fa29fcf0318a36395b491856362868cede53f838b397792d853a7ab314f7d8"
+    }
+  ]
+}
