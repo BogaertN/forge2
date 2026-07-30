@@ -16,6 +16,21 @@ from .canonical import (
     canonicalize,
     stable_identifier,
 )
+from .codec import (
+    contract_metadata_from_dict,
+    contract_metadata_to_dict,
+    contract_reference_from_dict,
+    declared_effect_from_dict,
+)
+from .frozen_value import (
+    FrozenCanonicalList,
+    FrozenCanonicalMap,
+    FrozenCanonicalScalar,
+    FrozenCanonicalValue,
+    freeze_canonical,
+    is_frozen_canonical,
+    thaw_canonical,
+)
 from .identity import (
     AuthorityStatus,
     CONTRACT_ID_NAMESPACE,
@@ -31,6 +46,14 @@ from .identity import (
     SchemaVersion,
     create_contract_metadata,
     verify_contract_metadata,
+)
+from .input_event import (
+    INPUT_EVENT_CONTRACT_TYPE,
+    INPUT_EVENT_SCHEMA_VERSION,
+    InputEvent,
+    create_input_event,
+    input_event_from_dict,
+    verify_input_event,
 )
 from .request_state import (
     REQUEST_STATE_ID_NAMESPACE,
@@ -69,6 +92,13 @@ __all__ = (
     "ContractValidationError",
     "DeclaredEffect",
     "EffectKind",
+    "FrozenCanonicalList",
+    "FrozenCanonicalMap",
+    "FrozenCanonicalScalar",
+    "FrozenCanonicalValue",
+    "INPUT_EVENT_CONTRACT_TYPE",
+    "INPUT_EVENT_SCHEMA_VERSION",
+    "InputEvent",
     "InvalidStableNamespaceError",
     "LifecycleState",
     "MAX_SAFE_INTEGER",
@@ -93,12 +123,22 @@ __all__ = (
     "canonical_json",
     "canonical_sha256",
     "canonicalize",
+    "contract_metadata_from_dict",
+    "contract_metadata_to_dict",
+    "contract_reference_from_dict",
     "create_contract_metadata",
+    "create_input_event",
     "create_request_state_registry",
     "create_successor",
+    "declared_effect_from_dict",
+    "freeze_canonical",
+    "input_event_from_dict",
+    "is_frozen_canonical",
     "request_state_from_value",
     "request_state_identity",
     "stable_identifier",
+    "thaw_canonical",
     "verify_contract_metadata",
+    "verify_input_event",
     "verify_successor",
 )

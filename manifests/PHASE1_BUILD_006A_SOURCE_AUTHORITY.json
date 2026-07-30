@@ -1,0 +1,132 @@
+{
+  "architecture_reference": {
+    "classification": "COMPATIBLE_ARCHITECTURE_REFERENCE",
+    "document_id": "17Ul43iJuo0NyFZsOuFwy7Lhhjey9Ah_DZbJJAOOyFvU",
+    "formal_structure": "I_t = {x_t, c_t, u_t, tau_t}",
+    "implementation_source_copied": false,
+    "title": "The Recursive Manifest Compiler - Section 03.1 Input Event",
+    "url": "https://docs.google.com/document/d/17Ul43iJuo0NyFZsOuFwy7Lhhjey9Ah_DZbJJAOOyFvU"
+  },
+  "build_branch": "build/phase1-006a-input-event-contract",
+  "build_id": "FORGE2-PHASE1-BUILD-006A",
+  "commit_subject": "Establish immutable InputEvent contract",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "8. Contract Architecture",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T21:49:27Z",
+  "excluded_generated_records": [
+    "manifests/PHASE1_BUILD_006A_SOURCE_AUTHORITY.json",
+    "receipts/PHASE1_BUILD_006A_RECEIPT.json"
+  ],
+  "expected_parent": "b551b6c97efcca44b2653821db8143e88abf39bd",
+  "files": [
+    {
+      "executable": false,
+      "path": "docs/contracts/INPUT_EVENT_CONTRACT_V1.md",
+      "sha256": "d66904e27f39882487791252a86cd402bea1ee4658fb56fb41fdbeb07520d7d8",
+      "size_bytes": 1759
+    },
+    {
+      "executable": false,
+      "path": "docs/decisions/ADR-0008-IMMUTABLE-INPUT-EVENT.md",
+      "sha256": "f41987bf7db600c554a4c3582f7d29f6aaca2b7407598a5cb61102e311f92d6e",
+      "size_bytes": 1310
+    },
+    {
+      "executable": false,
+      "path": "scripts/verify_current.py",
+      "sha256": "7b1a340c50eb2a601676338b8b04f49d9e7b0295c265ebde217013a6df1bbd84",
+      "size_bytes": 960
+    },
+    {
+      "executable": true,
+      "path": "scripts/verify_phase1_build_006a.py",
+      "sha256": "bd05958549d2112a5cacfeedbfbd10e272a1e3af2fdbdf497385d46351399661",
+      "size_bytes": 16917
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/__init__.py",
+      "sha256": "4bcf0b90386e9a07a3f299540b5e250d8b21b7fa41867c21d25f4e8e347efd89",
+      "size_bytes": 3608
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/codec.py",
+      "sha256": "cbda64be337caf3e1156f36bdd8d77bb88861a605efc1c04369dd1672c1dacfe",
+      "size_bytes": 7857
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/frozen_value.py",
+      "sha256": "44a5bf7676ac4e862d2809e889d8efb9c450e4ae1dedb052395152bd19631672",
+      "size_bytes": 6597
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/input_event.py",
+      "sha256": "2c93859ec87858d97b090cbf904ecdcce588b2c8f9b64e93f8ef9d940f0070c5",
+      "size_bytes": 10586
+    },
+    {
+      "executable": false,
+      "path": "tests/contracts/test_frozen_value.py",
+      "sha256": "defd1234968e009f3a7587bcd25ecf6a7983f19f11e9a59f15f8fb3b1c4f0534",
+      "size_bytes": 4024
+    },
+    {
+      "executable": false,
+      "path": "tests/contracts/test_input_event.py",
+      "sha256": "5b8f5fbcf9781ce67d17dd43b1f2df85ba793bcab61b62e22ca7485b5f07d11b",
+      "size_bytes": 7939
+    }
+  ],
+  "forge1_reference": {
+    "branch": "preservation/current-language-core-20260726",
+    "donor_admitted": false,
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge",
+    "read_only": true
+  },
+  "implementation_basis": {
+    "external_dependency_admitted": false,
+    "forge1_donor_admitted": false,
+    "type": "ORIGINAL_STANDARD_LIBRARY"
+  },
+  "implemented_primitives": [
+    "FROZEN_CANONICAL_LIST",
+    "FROZEN_CANONICAL_MAP",
+    "DEEP_CANONICAL_FREEZE",
+    "CANONICAL_THAW",
+    "STRICT_METADATA_DECODER",
+    "INPUT_EVENT",
+    "INPUT_EVENT_FOUR_PART_BODY",
+    "INPUT_EVENT_CANONICAL_ROUND_TRIP",
+    "INPUT_EVENT_HASH_BINDING",
+    "INPUT_EVENT_HIDDEN_FIELD_REJECTION",
+    "INPUT_EVENT_NO_AUTHORITY",
+    "INPUT_EVENT_NO_SIDE_EFFECTS"
+  ],
+  "phase_status": "PHASE_1_IN_PROGRESS",
+  "predecessor_anchors": {
+    "branch_ci_run": 30580735770,
+    "build_id": "FORGE2-PHASE1-BUILD-005A",
+    "canonical_py_sha256": "cdc0ee68d4e3de896a252f8a1f04e5a112842f17acd337a8628fdd19cc19e0b9",
+    "commit": "b551b6c97efcca44b2653821db8143e88abf39bd",
+    "identity_py_sha256": "505c01f1fdb5a8166dee234ae1df568a1abbf2d8b5ef20be83a5ffa66939c701",
+    "main_ci_run": 30581030112,
+    "manifest_path": "manifests/PHASE1_BUILD_005A_SOURCE_AUTHORITY.json",
+    "manifest_sha256": "9a681945eb57c132889bf3cc8f950af28e8f7e1c1cf1035c3ee82055a8ca9507",
+    "receipt_path": "receipts/PHASE1_BUILD_005A_RECEIPT.json",
+    "receipt_sha256": "5e33e818e738c154d82a3a32c8778eeacdd6d78bdf08aa07c0e46c531492edca",
+    "request_state_py_sha256": "70b49f90f4e3d991a0f31ff7472c69c5b7331ec26e6e90601b377ef058678bbd",
+    "successor_py_sha256": "13c158d6850eaab74572a8356152d8923c5bc2526d8189cb0f86652625389a52"
+  },
+  "product_capability_claimed": false,
+  "request_transition_policy_defined": false,
+  "runtime_authority_added": false,
+  "schema_version": "aiweb_forge2_phase1_build_006a_source_authority_v1"
+}
