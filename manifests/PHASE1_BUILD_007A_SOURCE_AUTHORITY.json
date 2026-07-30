@@ -1,0 +1,135 @@
+{
+  "build_branch": "build/phase1-007a-classification-candidate-set",
+  "build_id": "FORGE2-PHASE1-BUILD-007A",
+  "candidate_selection_added": false,
+  "classifier_execution_added": false,
+  "commit_subject": "Establish ClassificationCandidateSet contract",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "sections": [
+      "4.3 Model output boundary",
+      "8. Contract Architecture",
+      "9.4 Classification tasks"
+    ],
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T22:43:11Z",
+  "excluded_generated_records": [
+    "manifests/PHASE1_BUILD_007A_SOURCE_AUTHORITY.json",
+    "receipts/PHASE1_BUILD_007A_RECEIPT.json"
+  ],
+  "expected_parent": "39802d2abc3e61a370f3dc2aab99fc024b5447c6",
+  "explicitly_not_implemented": [
+    "CLASSIFIER_EXECUTION",
+    "MODEL_TRAINING",
+    "MODEL_PROMOTION",
+    "CANDIDATE_SELECTION",
+    "REQUEST_CONTRACT",
+    "TOOL_SELECTION",
+    "COMMAND_CONSTRUCTION",
+    "REQUEST_TRANSITION_POLICY",
+    "EXECUTION_AUTHORITY",
+    "MEMORY_AUTHORITY"
+  ],
+  "files": [
+    {
+      "executable": false,
+      "path": "docs/contracts/CLASSIFICATION_CANDIDATE_SET_V1.md",
+      "sha256": "8f0a49f89386d2ea2d809aa21786984b8af4bbe583a9c6b47180b6233f97d531",
+      "size_bytes": 2545
+    },
+    {
+      "executable": false,
+      "path": "docs/decisions/ADR-0009-CLASSIFICATION-CANDIDATE-SET.md",
+      "sha256": "87d7040e73b44fb6657d0c5b96be6af90e56690ba72dea18aa2feaef245139ba",
+      "size_bytes": 1879
+    },
+    {
+      "executable": false,
+      "path": "scripts/verify_current.py",
+      "sha256": "466033478b2407eba9dc7a97361b6f927ac698c45feeae95d5a808cc7aefdd19",
+      "size_bytes": 960
+    },
+    {
+      "executable": true,
+      "path": "scripts/verify_phase1_build_007a.py",
+      "sha256": "c31d46c7e20790ec0f3bc8a26abfd9c61b1f6b83ef1861ded29868b942183347",
+      "size_bytes": 21479
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/__init__.py",
+      "sha256": "430f4ea20a25319673aded031d535f984603ee96577b2928fefd30edd5e1a0aa",
+      "size_bytes": 4738
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/classification_candidate.py",
+      "sha256": "48f1f2c65c0f8098ed7efb212a2a3aef0f17a4d29864c6ce664cacc17e731f16",
+      "size_bytes": 52786
+    },
+    {
+      "executable": false,
+      "path": "tests/contracts/test_classification_candidate.py",
+      "sha256": "221100b85e3f044b2c365b1aef02bf7922d7981ced51bc066878a8a6cb86b9eb",
+      "size_bytes": 25368
+    }
+  ],
+  "forge1_reference": {
+    "branch": "preservation/current-language-core-20260726",
+    "donor_admitted": false,
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge",
+    "read_only": true
+  },
+  "implementation_basis": {
+    "external_dependency_admitted": false,
+    "forge1_donor_admitted": false,
+    "type": "ORIGINAL_STANDARD_LIBRARY"
+  },
+  "implemented_primitives": [
+    "CANDIDATE_DIMENSION",
+    "CANDIDATE_ORIGIN",
+    "FEATURE_EVIDENCE",
+    "FEATURE_EVIDENCE_JSON_POINTER",
+    "FEATURE_EVIDENCE_TEXT_SPAN",
+    "FEATURE_EVIDENCE_CONTENT_IDENTITY",
+    "CLASSIFICATION_CANDIDATE",
+    "CLASSIFICATION_CANDIDATE_CONTENT_IDENTITY",
+    "FIXED_POINT_CONFIDENCE_BASIS_POINTS",
+    "CLASSIFICATION_CANDIDATE_SET",
+    "INPUT_EVENT_REFERENCE_BINDING",
+    "UNCERTAINTY_CODES",
+    "CLARIFICATION_RECOMMENDATION",
+    "CLARIFICATION_REASON_CODES",
+    "CANONICAL_ROUND_TRIP",
+    "HIDDEN_FIELD_REJECTION",
+    "NO_CANDIDATE_AUTHORITY",
+    "NO_CANDIDATE_SIDE_EFFECTS"
+  ],
+  "model_training_added": false,
+  "phase_status": "PHASE_1_IN_PROGRESS",
+  "predecessor_anchors": {
+    "branch_ci_run": 30591698841,
+    "build_id": "FORGE2-PHASE1-BUILD-006A",
+    "canonical_py_sha256": "cdc0ee68d4e3de896a252f8a1f04e5a112842f17acd337a8628fdd19cc19e0b9",
+    "codec_py_sha256": "cbda64be337caf3e1156f36bdd8d77bb88861a605efc1c04369dd1672c1dacfe",
+    "commit": "39802d2abc3e61a370f3dc2aab99fc024b5447c6",
+    "frozen_value_py_sha256": "44a5bf7676ac4e862d2809e889d8efb9c450e4ae1dedb052395152bd19631672",
+    "identity_py_sha256": "505c01f1fdb5a8166dee234ae1df568a1abbf2d8b5ef20be83a5ffa66939c701",
+    "input_event_py_sha256": "2c93859ec87858d97b090cbf904ecdcce588b2c8f9b64e93f8ef9d940f0070c5",
+    "main_ci_run": 30591959191,
+    "manifest_path": "manifests/PHASE1_BUILD_006A_SOURCE_AUTHORITY.json",
+    "manifest_sha256": "cdbbff5f50c8227d31bba268a49d1cefcf8e63e079b7d9c7f41fe81700cb4428",
+    "receipt_path": "receipts/PHASE1_BUILD_006A_RECEIPT.json",
+    "receipt_sha256": "69bc981dc12c4962fd71ab981fc6e53a173b0b844bb4450447d0fe01b5cf537c",
+    "request_state_py_sha256": "70b49f90f4e3d991a0f31ff7472c69c5b7331ec26e6e90601b377ef058678bbd",
+    "successor_py_sha256": "13c158d6850eaab74572a8356152d8923c5bc2526d8189cb0f86652625389a52"
+  },
+  "product_capability_claimed": false,
+  "request_contract_added": false,
+  "request_transition_policy_defined": false,
+  "runtime_authority_added": false,
+  "schema_version": "aiweb_forge2_phase1_build_007a_source_authority_v1"
+}
