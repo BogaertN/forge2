@@ -1,0 +1,94 @@
+{
+  "build_branch": "build/phase0-000c-c-b1",
+  "build_id": "FORGE2-PHASE0-BUILD-000C-C-B1",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.1 Phase 0 \u2014 Decision, preservation, and clean establishment",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T16:36:01Z",
+  "expected_parent": "d805691e169e52bc00ea9ec674eba706abd3ddda",
+  "files": [
+    {
+      "executable": true,
+      "path": ".githooks/pre-push",
+      "sha256": "4666c69fc0fde3b96fbd06d354f7c81d45202d314eb7a29df8041919f7a08ff3",
+      "size_bytes": 3788
+    },
+    {
+      "executable": false,
+      "path": ".github/workflows/ci.yml",
+      "sha256": "9eb2019a6e6937adb678164ec2a33256ff3a91def313fe5683291adc02f295bf",
+      "size_bytes": 1557
+    },
+    {
+      "executable": false,
+      "path": "README.md",
+      "sha256": "40d680a234bfc4cf3b1d395c251b4b9bc63c0de45e000e65c01f1bcb577862a6",
+      "size_bytes": 1173
+    },
+    {
+      "executable": false,
+      "path": "docs/decisions/ADR-0003-BRANCH-PROTECTION-DISPOSITION.md",
+      "sha256": "432830d379ff143efd6899ed746c1401eb23fb2e177e540343e6b1f4a8e0ebf2",
+      "size_bytes": 1005
+    },
+    {
+      "executable": false,
+      "path": "docs/operations/PHASE_0_REMOTE_CI_AND_PROTECTION_STATUS.md",
+      "sha256": "9ddd9bbab97740d89a5a310b4c1022cc240dc969ca6e748bec4f43e620d65985",
+      "size_bytes": 651
+    },
+    {
+      "executable": false,
+      "path": "docs/operations/REMOTE_AND_BRANCH_PROTECTION_PENDING.md",
+      "sha256": "33db8fe6d72899c3865331ccde95b16925518ab41da70d0c062769960d89e518",
+      "size_bytes": 420
+    },
+    {
+      "executable": false,
+      "path": "docs/policies/BRANCH_AND_MERGE_POLICY.md",
+      "sha256": "0dc6ad8c653521cd6e2da03fee711d15efa6924c68d1a0ac09d061a579dc6894",
+      "size_bytes": 1094
+    },
+    {
+      "executable": false,
+      "path": "docs/roadmap/CONTROLLING_ROADMAP_REFERENCE.md",
+      "sha256": "e39a043cf1844b32aeb0b937ae44fab4304044a380249e04d72a35a7b7070a7e",
+      "size_bytes": 867
+    },
+    {
+      "executable": false,
+      "path": "scripts/verify_current.py",
+      "sha256": "fae84f5638e6dfd079c0994ce76aba4efb30c41edd3c414879dcac61440c9428",
+      "size_bytes": 939
+    },
+    {
+      "executable": false,
+      "path": "scripts/verify_phase0_closure_candidate.py",
+      "sha256": "0227352914a34a310b5093f986dc7a9d6dc78d29d602eb9c2e43c88edc0335c9",
+      "size_bytes": 11294
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/establishment.py",
+      "sha256": "5c6622d0f245fbdc1ad981c3d0f73c45719653ad7bcf210b48613e7ae5ca6afa",
+      "size_bytes": 2354
+    },
+    {
+      "executable": false,
+      "path": "tests/test_establishment.py",
+      "sha256": "b31db7205a5e6e808ba1a84d57fcb4bfd536e479c996c8080ed698cb5b4f8033",
+      "size_bytes": 2960
+    }
+  ],
+  "forge1_reference": {
+    "branch": "preservation/current-language-core-20260726",
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge",
+    "read_only": true
+  },
+  "product_capability_claimed": false,
+  "schema_version": "aiweb_forge2_source_authority_v1"
+}

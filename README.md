@@ -1,8 +1,8 @@
 # AI.Web Forge 2.0
 
-Forge 2.0 is a clean, independent implementation of a
-local-first, open-source-first, governed software engineering
-and knowledge agent.
+Forge 2.0 is a clean, independent, local-first,
+open-source-first governed software-engineering and
+knowledge agent.
 
 ## Controlling production roadmap
 
@@ -18,46 +18,27 @@ Phase:
 
 Build:
 
-**000C-B — Private GitHub remote establishment**
+**000C-C-B1 — Phase 0 closure candidate**
 
-Private remote:
+No product capability is claimed.
 
-**BogaertN/forge2**
+The private remote and its first CI run are verified.
 
-Current capability status:
+GitHub server-side branch protection and repository
+rulesets are unavailable for this private repository
+under the current account plan.
 
-**No product capability is claimed.**
+Forge 2.0 remains private. A paid-plan upgrade is not a
+build requirement, and the repository will not be made
+public merely to obtain branch protection.
 
-Forge 2.0 currently provides only establishment identity,
-governance documents, source-authority evidence, tests, and
-continuous-integration configuration.
+Compensating controls:
 
-It does not yet interpret natural language, control a terminal,
-install tools, modify projects, conduct research, perform
-mathematics, run simulations, or construct itself.
+- branch-per-build development;
+- branch CI before main integration;
+- fast-forward-only main integration;
+- tracked local pre-push verification;
+- exact local and remote commit comparison;
+- main CI after integration.
 
-## Product direction
-
-Forge 2.0 will provide a Codex-like engineering workflow without
-using a large language model as authoritative meaning, planning,
-coding, tool-selection, verification, permission, or execution.
-
-Forge 2.0 will qualify and reuse open-source capabilities before
-writing original implementations.
-
-Small traditional machine-learning models may produce bounded
-classification and ranking candidates. They do not receive raw
-terminal or mutation authority.
-
-## Forge 1 relationship
-
-Forge 1 remains a protected read-only reference and donor source.
-
-Forge 2.0 does not import Forge 1 or require Forge 1 to run.
-
-## Phase 0 remaining work
-
-- inspect the first GitHub Actions run;
-- record CI evidence;
-- apply available main-branch protection;
-- record the final Phase 0 acceptance receipt.
+Phase 0 final acceptance is still pending.

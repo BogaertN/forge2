@@ -1,6 +1,6 @@
-"""Phase 0 establishment identity.
+"""Phase 0 closure-candidate identity.
 
-This module reports repository-establishment state only.
+This module reports establishment state only.
 It does not provide a product capability.
 """
 
@@ -10,15 +10,24 @@ from dataclasses import asdict, dataclass
 from typing import Any, Final
 
 
-BUILD_ID: Final[str] = "FORGE2-PHASE0-BUILD-000C-B"
+BUILD_ID: Final[str] = "FORGE2-PHASE0-BUILD-000C-C-B1"
 FORGE2_VERSION: Final[str] = "0.0.0"
+
 STATUS_SCHEMA_VERSION: Final[str] = (
-    "aiweb_forge2_establishment_status_v2"
+    "aiweb_forge2_establishment_status_v3"
 )
-CONTROLLING_ROADMAP_ID: Final[str] = "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
-CONTROLLING_ROADMAP_URL: Final[str] = "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+
+CONTROLLING_ROADMAP_ID: Final[str] = (
+    "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+)
+CONTROLLING_ROADMAP_URL: Final[str] = (
+    "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+)
+
 REMOTE_REPOSITORY: Final[str] = "BogaertN/forge2"
-REMOTE_URL: Final[str] = "https://github.com/BogaertN/forge2"
+REMOTE_URL: Final[str] = (
+    "https://github.com/BogaertN/forge2"
+)
 
 
 @dataclass(frozen=True, slots=True)
@@ -33,8 +42,10 @@ class EstablishmentStatus:
     remote_configured: bool
     remote_repository: str
     remote_url: str
-    ci_status: str
+    parent_ci_status: str
+    closure_candidate_ci_status: str
     branch_protection_status: str
+    compensating_controls_status: str
     roadmap_id: str
     roadmap_url: str
 
@@ -43,21 +54,31 @@ class EstablishmentStatus:
 
 
 def establishment_status() -> EstablishmentStatus:
-    """Return immutable Phase 0 establishment status."""
+    """Return Phase 0 closure-candidate status."""
 
     return EstablishmentStatus(
         schema_version=STATUS_SCHEMA_VERSION,
         build_id=BUILD_ID,
         forge2_version=FORGE2_VERSION,
-        phase="PHASE_0_REMOTE_ESTABLISHED",
+        phase="PHASE_0_CLOSURE_CANDIDATE",
         repository_independent=True,
         forge1_runtime_dependency=False,
         product_capability_claimed=False,
         remote_configured=True,
         remote_repository=REMOTE_REPOSITORY,
         remote_url=REMOTE_URL,
-        ci_status="PENDING_REMOTE_RUN_INSPECTION",
-        branch_protection_status="PENDING_BUILD_000C_C",
+        parent_ci_status="VERIFIED_SUCCESS",
+        closure_candidate_ci_status=(
+            "REQUIRED_BEFORE_FINAL_ACCEPTANCE"
+        ),
+        branch_protection_status=(
+            "UNAVAILABLE_FOR_PRIVATE_REPOSITORY_"
+            "ON_CURRENT_ACCOUNT_PLAN"
+        ),
+        compensating_controls_status=(
+            "BRANCH_FIRST_CI_BEFORE_MAIN_"
+            "AND_LOCAL_PRE_PUSH_GATE"
+        ),
         roadmap_id=CONTROLLING_ROADMAP_ID,
         roadmap_url=CONTROLLING_ROADMAP_URL,
     )

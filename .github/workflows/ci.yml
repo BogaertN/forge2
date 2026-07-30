@@ -1,16 +1,15 @@
-name: Forge 2.0 Phase 0 CI
+name: Forge 2.0 Verification
 
 on:
   push:
-    branches:
-      - main
   pull_request:
 
 permissions:
   contents: read
 
 jobs:
-  phase-zero:
+  forge2-verification:
+    name: forge2-verification
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -23,7 +22,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Compile Python sources in memory
+      - name: Compile Python sources
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -34,22 +33,27 @@ jobs:
               Path("src"),
               Path("tests"),
               Path("scripts"),
+              Path(".githooks"),
           ):
-              for path in sorted(root.rglob("*.py")):
+              for path in sorted(
+                  root.rglob("*.py")
+              ):
                   compile(
-                      path.read_text(encoding="utf-8"),
+                      path.read_text(
+                          encoding="utf-8"
+                      ),
                       str(path),
                       "exec",
                   )
                   count += 1
 
           print(
-              f"Python source compilation: PASS "
-              f"({count} files)"
+              "Python source compilation: "
+              f"PASS ({count} files)"
           )
           PY
 
-      - name: Run establishment tests
+      - name: Run current unit tests
         env:
           PYTHONPATH: src
           PYTHONDONTWRITEBYTECODE: "1"
@@ -59,10 +63,9 @@ jobs:
             -p 'test_*.py' \
             -v
 
-      - name: Run Build 000C-B verifier
+      - name: Run current verifier
         env:
           PYTHONPATH: src
           PYTHONDONTWRITEBYTECODE: "1"
         run: |
-          python scripts/verify_build_000c_remote.py \
-            --mode remote
+          python scripts/verify_current.py

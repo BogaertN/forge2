@@ -1,7 +1,5 @@
 # Controlling Production Roadmap
 
-## Document identity
-
 Title:
 
 AI.Web Forge 2.0 Production Build Bible — Open-Source-First Non-LLM Self-Constructing Engineering Agent
@@ -22,29 +20,23 @@ Decision Owner:
 
 **Nicholas Jacob Bogaert / AI.Web Inc.**
 
-## Current phase
+Current section:
 
 25.1 Phase 0 — Decision, preservation, and clean establishment
 
-## Current build
+Current build:
 
-FORGE2-PHASE0-BUILD-000C-B
+FORGE2-PHASE0-BUILD-000C-C-B1
 
-## Authority law
+Current status:
 
-The Google Doc controls Forge 2.0 architecture and build sequence
-until the Decision Owner records an explicit superseding decision.
+The independent private repository and parent CI are
+verified.
 
-Repository documents may implement and preserve that authority.
-They do not silently supersede it.
+Server-side branch protection is unavailable on the
+current account plan. The repository remains private and
+compensating controls are being verified.
 
-## Build 000C-B scope
-
-This build establishes the private GitHub repository, configures
-the local origin, pushes the verified main branch, and triggers
-the first remote CI run.
-
-CI-result inspection, branch protection, and final Phase 0
-acceptance remain separate Build 000C-C work.
+This build is a Phase 0 closure candidate.
 
 No product capability is claimed.

@@ -1,0 +1,48 @@
+{
+  "account_upgrade_required": false,
+  "build_id": "FORGE2-PHASE0-BUILD-000C-C-B1",
+  "classic_protection_api": {
+    "exit_code": 1,
+    "message": "Upgrade to GitHub Pro or make this repository public to enable this feature."
+  },
+  "closure_candidate_ci_pending": true,
+  "compensating_controls": [
+    "BUILD_BRANCH_REQUIRED",
+    "BRANCH_CI_REQUIRED",
+    "FAST_FORWARD_ONLY_MAIN",
+    "TRACKED_LOCAL_PRE_PUSH_GATE",
+    "LOCAL_TESTS_BEFORE_MAIN_PUSH",
+    "CURRENT_VERIFIER_BEFORE_MAIN_PUSH",
+    "MAIN_CI_REQUIRED"
+  ],
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.1 Phase 0 \u2014 Decision, preservation, and clean establishment",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T16:36:01Z",
+  "forge1_files_copied": [],
+  "forge1_modified": false,
+  "packages_installed": [],
+  "product_capability_claimed": false,
+  "public_visibility_required": false,
+  "repository_remains_private": true,
+  "rulesets_api": {
+    "exit_code": 1,
+    "message": "Upgrade to GitHub Pro or make this repository public to enable this feature."
+  },
+  "schema_version": "aiweb_forge2_protection_disposition_v1",
+  "server_branch_protection_status": "UNAVAILABLE_CURRENT_ACCOUNT_PLAN",
+  "source_authority_manifest": "manifests/BUILD_000C_C_B1_SOURCE_AUTHORITY.json",
+  "source_authority_manifest_sha256": "3673fbbe2bb8723ee6e1fb2dabe70b857314b447b1a38d1b91e05ab9917b78e2",
+  "status": "PASS",
+  "verified_parent_ci": {
+    "check_name": "phase-zero",
+    "commit": "d805691e169e52bc00ea9ec674eba706abd3ddda",
+    "conclusion": "success",
+    "job_id": 90963920989,
+    "run_id": 30569975781,
+    "status": "completed"
+  }
+}

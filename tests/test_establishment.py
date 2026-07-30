@@ -1,4 +1,4 @@
-"""Acceptance tests for Phase 0 Build 000C-B."""
+"""Tests for Phase 0 Build 000C-C-B1."""
 
 from __future__ import annotations
 
@@ -19,10 +19,10 @@ class EstablishmentTests(unittest.TestCase):
     def test_build_identity(self) -> None:
         self.assertEqual(
             BUILD_ID,
-            "FORGE2-PHASE0-BUILD-000C-B",
+            "FORGE2-PHASE0-BUILD-000C-C-B1",
         )
 
-    def test_repository_is_independent(self) -> None:
+    def test_independent_repository(self) -> None:
         status = establishment_status()
 
         self.assertIs(
@@ -34,48 +34,54 @@ class EstablishmentTests(unittest.TestCase):
             False,
         )
 
-    def test_no_product_capability_is_claimed(self) -> None:
+    def test_no_product_capability_claim(self) -> None:
         self.assertIs(
             establishment_status()
             .product_capability_claimed,
             False,
         )
 
-    def test_private_remote_identity(self) -> None:
-        status = establishment_status()
-
-        self.assertIs(
-            status.remote_configured,
-            True,
-        )
+    def test_parent_ci_verified(self) -> None:
         self.assertEqual(
-            status.remote_repository,
-            "BogaertN/forge2",
-        )
-        self.assertEqual(
-            status.remote_url,
-            "https://github.com/BogaertN/forge2",
+            establishment_status()
+            .parent_ci_status,
+            "VERIFIED_SUCCESS",
         )
 
-    def test_phase_zero_remains_open(self) -> None:
-        status = establishment_status()
-
+    def test_candidate_ci_not_preclaimed(self) -> None:
         self.assertEqual(
-            status.ci_status,
-            "PENDING_REMOTE_RUN_INSPECTION",
-        )
-        self.assertEqual(
-            status.branch_protection_status,
-            "PENDING_BUILD_000C_C",
+            establishment_status()
+            .closure_candidate_ci_status,
+            "REQUIRED_BEFORE_FINAL_ACCEPTANCE",
         )
 
-    def test_controlling_roadmap_identity(self) -> None:
+    def test_branch_protection_limitation(self) -> None:
+        self.assertEqual(
+            establishment_status()
+            .branch_protection_status,
+            (
+                "UNAVAILABLE_FOR_PRIVATE_REPOSITORY_"
+                "ON_CURRENT_ACCOUNT_PLAN"
+            ),
+        )
+
+    def test_compensating_controls(self) -> None:
+        self.assertEqual(
+            establishment_status()
+            .compensating_controls_status,
+            (
+                "BRANCH_FIRST_CI_BEFORE_MAIN_"
+                "AND_LOCAL_PRE_PUSH_GATE"
+            ),
+        )
+
+    def test_roadmap_identity(self) -> None:
         self.assertEqual(
             establishment_status().roadmap_id,
             "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
         )
 
-    def test_module_runs_independently(self) -> None:
+    def test_module_execution(self) -> None:
         environment = os.environ.copy()
         environment["PYTHONPATH"] = str(
             ROOT / "src"
@@ -83,7 +89,11 @@ class EstablishmentTests(unittest.TestCase):
         environment["PYTHONDONTWRITEBYTECODE"] = "1"
 
         result = subprocess.run(
-            [sys.executable, "-m", "forge2"],
+            [
+                sys.executable,
+                "-m",
+                "forge2",
+            ],
             cwd=ROOT,
             env=environment,
             text=True,
@@ -101,16 +111,8 @@ class EstablishmentTests(unittest.TestCase):
         payload = json.loads(result.stdout)
 
         self.assertEqual(
-            payload["build_id"],
-            BUILD_ID,
-        )
-        self.assertIs(
-            payload["remote_configured"],
-            True,
-        )
-        self.assertIs(
-            payload["product_capability_claimed"],
-            False,
+            payload["phase"],
+            "PHASE_0_CLOSURE_CANDIDATE",
         )
 
 

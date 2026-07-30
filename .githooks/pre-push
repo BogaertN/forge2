@@ -1,0 +1,187 @@
+#!/usr/bin/env python3
+"""Tracked local pre-push gate for Forge 2.0."""
+
+from __future__ import annotations
+
+import os
+import subprocess
+import sys
+from pathlib import Path
+
+
+ZERO_SHA = "0" * 40
+
+
+def run(
+    arguments: list[str],
+    *,
+    root: Path,
+    env: dict[str, str] | None = None,
+) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(
+        arguments,
+        cwd=root,
+        env=env,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+    )
+
+
+def main() -> int:
+    root_result = subprocess.run(
+        [
+            "git",
+            "rev-parse",
+            "--show-toplevel",
+        ],
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+    )
+
+    if root_result.returncode != 0:
+        print(
+            root_result.stderr,
+            file=sys.stderr,
+        )
+        return 1
+
+    root = Path(root_result.stdout.strip())
+
+    updates = [
+        line.split()
+        for line in sys.stdin.read().splitlines()
+        if line.strip()
+    ]
+
+    main_push = False
+
+    for update in updates:
+        if len(update) != 4:
+            print(
+                "Malformed pre-push ref input.",
+                file=sys.stderr,
+            )
+            return 1
+
+        _, local_sha, remote_ref, remote_sha = update
+
+        if local_sha == ZERO_SHA:
+            print(
+                "Forge 2 rejects branch deletion: "
+                f"{remote_ref}",
+                file=sys.stderr,
+            )
+            return 1
+
+        if remote_sha != ZERO_SHA:
+            ancestry = run(
+                [
+                    "git",
+                    "merge-base",
+                    "--is-ancestor",
+                    remote_sha,
+                    local_sha,
+                ],
+                root=root,
+            )
+
+            if ancestry.returncode != 0:
+                print(
+                    "Forge 2 rejects a non-fast-forward "
+                    f"push: {remote_ref}",
+                    file=sys.stderr,
+                )
+                return 1
+
+        if remote_ref == "refs/heads/main":
+            main_push = True
+
+    if not main_push:
+        print(
+            "Forge 2 pre-push gate: "
+            "non-main fast-forward push accepted."
+        )
+        return 0
+
+    status = run(
+        [
+            "git",
+            "status",
+            "--porcelain=v1",
+            "--untracked-files=all",
+        ],
+        root=root,
+    )
+
+    if (
+        status.returncode != 0
+        or status.stdout.strip()
+    ):
+        print(
+            "Forge 2 main push requires a clean "
+            "worktree.",
+            file=sys.stderr,
+        )
+        print(
+            status.stdout,
+            file=sys.stderr,
+        )
+        return 1
+
+    environment = os.environ.copy()
+    environment["PYTHONPATH"] = str(
+        root / "src"
+    )
+    environment["PYTHONDONTWRITEBYTECODE"] = "1"
+
+    tests = run(
+        [
+            sys.executable,
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_*.py",
+            "-v",
+        ],
+        root=root,
+        env=environment,
+    )
+
+    print(tests.stdout, end="")
+    print(
+        tests.stderr,
+        end="",
+        file=sys.stderr,
+    )
+
+    if tests.returncode != 0:
+        return 1
+
+    verifier = run(
+        [
+            sys.executable,
+            "scripts/verify_current.py",
+        ],
+        root=root,
+        env=environment,
+    )
+
+    print(verifier.stdout, end="")
+    print(
+        verifier.stderr,
+        end="",
+        file=sys.stderr,
+    )
+
+    return verifier.returncode
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
