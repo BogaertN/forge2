@@ -7,7 +7,23 @@
     "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
     "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
   },
+  "correction_history": [
+    {
+      "build_id": "FORGE2-PHASE0-BUILD-000C-C-B1-R2",
+      "correction": "Set actions/checkout fetch-depth to 2.",
+      "failed_job_id": 90967820591,
+      "failed_run_id": 30571121938,
+      "failure": "Commit parent mismatch",
+      "predecessor_manifest_sha256": "3673fbbe2bb8723ee6e1fb2dabe70b857314b447b1a38d1b91e05ab9917b78e2",
+      "root_cause": "GitHub Actions checked out one commit, so HEAD^ was unavailable."
+    }
+  ],
   "created_utc": "2026-07-30T16:36:01Z",
+  "excluded_generated_records": [
+    "manifests/BUILD_000C_C_B1_SOURCE_AUTHORITY.json",
+    "receipts/BUILD_000C_C_B1_PROTECTION_DISPOSITION.json",
+    "receipts/BUILD_000C_C_B1_R2_CI_CORRECTION.json"
+  ],
   "expected_parent": "d805691e169e52bc00ea9ec674eba706abd3ddda",
   "files": [
     {
@@ -19,8 +35,8 @@
     {
       "executable": false,
       "path": ".github/workflows/ci.yml",
-      "sha256": "9eb2019a6e6937adb678164ec2a33256ff3a91def313fe5683291adc02f295bf",
-      "size_bytes": 1557
+      "sha256": "65e58bfbd3363ddacdb538bf420a9689401cf1291490e9c4ed170323a689f261",
+      "size_bytes": 1711
     },
     {
       "executable": false,
@@ -37,8 +53,8 @@
     {
       "executable": false,
       "path": "docs/operations/PHASE_0_REMOTE_CI_AND_PROTECTION_STATUS.md",
-      "sha256": "9ddd9bbab97740d89a5a310b4c1022cc240dc969ca6e748bec4f43e620d65985",
-      "size_bytes": 651
+      "sha256": "1b43c2d3115e59f41944eb2b393c143a3b8ce87d5c9da976b2b0e932788c445f",
+      "size_bytes": 1404
     },
     {
       "executable": false,
@@ -61,8 +77,14 @@
     {
       "executable": false,
       "path": "scripts/verify_current.py",
-      "sha256": "fae84f5638e6dfd079c0994ce76aba4efb30c41edd3c414879dcac61440c9428",
-      "size_bytes": 939
+      "sha256": "58f28f72a315976bb02b9dead0ae3b1b63e87dc2c1be3082ec31a17041e5ebea",
+      "size_bytes": 971
+    },
+    {
+      "executable": false,
+      "path": "scripts/verify_phase0_ci_history_correction.py",
+      "sha256": "6e5fc533b02b3f0008b8d0fee249a35f6c22b41352eed552c3d648fce0994f6d",
+      "size_bytes": 11101
     },
     {
       "executable": false,
@@ -89,6 +111,7 @@
     "path": "/home/nic/forge",
     "read_only": true
   },
+  "latest_correction_build_id": "FORGE2-PHASE0-BUILD-000C-C-B1-R2",
   "product_capability_claimed": false,
   "schema_version": "aiweb_forge2_source_authority_v1"
 }

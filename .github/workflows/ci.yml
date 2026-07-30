@@ -16,6 +16,10 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v4
+        with:
+          # The verifier proves the exact commit parent.
+          # Two commits are the minimum required history.
+          fetch-depth: 2
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v5

@@ -14,14 +14,18 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main() -> int:
     environment = os.environ.copy()
-    environment["PYTHONPATH"] = str(ROOT / "src")
-    environment["PYTHONDONTWRITEBYTECODE"] = "1"
+    environment["PYTHONPATH"] = str(
+        ROOT / "src"
+    )
+    environment[
+        "PYTHONDONTWRITEBYTECODE"
+    ] = "1"
 
     result = subprocess.run(
         [
             sys.executable,
             "scripts/"
-            "verify_phase0_closure_candidate.py",
+            "verify_phase0_ci_history_correction.py",
             "--mode",
             "committed",
         ],

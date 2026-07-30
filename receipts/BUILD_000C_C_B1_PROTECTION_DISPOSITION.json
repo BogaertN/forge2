@@ -5,6 +5,19 @@
     "exit_code": 1,
     "message": "Upgrade to GitHub Pro or make this repository public to enable this feature."
   },
+  "closure_candidate_ci_attempts": [
+    {
+      "checkout_fetch_depth": 1,
+      "commit": "e683ffedf26506d8a2490707a89b4dfce5f73611",
+      "conclusion": "failure",
+      "failed_step": "Run current verifier",
+      "job_id": 90967820591,
+      "preserved": true,
+      "run_id": 30571121938,
+      "status": "completed",
+      "verifier_error": "Commit parent mismatch"
+    }
+  ],
   "closure_candidate_ci_pending": true,
   "compensating_controls": [
     "BUILD_BRANCH_REQUIRED",
@@ -24,6 +37,7 @@
   "created_utc": "2026-07-30T16:36:01Z",
   "forge1_files_copied": [],
   "forge1_modified": false,
+  "latest_correction_build_id": "FORGE2-PHASE0-BUILD-000C-C-B1-R2",
   "packages_installed": [],
   "product_capability_claimed": false,
   "public_visibility_required": false,
@@ -35,7 +49,7 @@
   "schema_version": "aiweb_forge2_protection_disposition_v1",
   "server_branch_protection_status": "UNAVAILABLE_CURRENT_ACCOUNT_PLAN",
   "source_authority_manifest": "manifests/BUILD_000C_C_B1_SOURCE_AUTHORITY.json",
-  "source_authority_manifest_sha256": "3673fbbe2bb8723ee6e1fb2dabe70b857314b447b1a38d1b91e05ab9917b78e2",
+  "source_authority_manifest_sha256": "b33800cd311e6ce90badd3f07772793fb139b8e314e9a4eb02d6c0c51b0da5dc",
   "status": "PASS",
   "verified_parent_ci": {
     "check_name": "phase-zero",

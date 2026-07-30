@@ -1,0 +1,48 @@
+{
+  "build_id": "FORGE2-PHASE0-BUILD-000C-C-B1-R2",
+  "ci_reverification_pending": true,
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "25.1 Phase 0 \u2014 Decision, preservation, and clean establishment",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "correction": {
+    "checkout_action": "actions/checkout@v4",
+    "fetch_depth_after": 2,
+    "fetch_depth_before": 1,
+    "minimum_required_history": true,
+    "workflow": ".github/workflows/ci.yml",
+    "workflow_sha256_after": "65e58bfbd3363ddacdb538bf420a9689401cf1291490e9c4ed170323a689f261",
+    "workflow_sha256_before": "9eb2019a6e6937adb678164ec2a33256ff3a91def313fe5683291adc02f295bf"
+  },
+  "correction_parent": "e683ffedf26506d8a2490707a89b4dfce5f73611",
+  "created_utc": "2026-07-30T16:49:31Z",
+  "failed_ci_attempt": {
+    "commit": "e683ffedf26506d8a2490707a89b4dfce5f73611",
+    "conclusion": "failure",
+    "job_id": 90967820591,
+    "job_name": "forge2-verification",
+    "preserved": true,
+    "run_id": 30571121938,
+    "status": "completed",
+    "verifier_error": "Commit parent mismatch"
+  },
+  "forge1_modified": false,
+  "main_modified": false,
+  "main_preserved_at": "d805691e169e52bc00ea9ec674eba706abd3ddda",
+  "packages_installed": [],
+  "predecessor_manifest_sha256": "3673fbbe2bb8723ee6e1fb2dabe70b857314b447b1a38d1b91e05ab9917b78e2",
+  "product_capability_claimed": false,
+  "root_cause": {
+    "category": "CI_HISTORY_CUSTODY",
+    "fetch_depth": 1,
+    "missing_object": "HEAD^",
+    "source_behavior_failure": false,
+    "unit_test_failure": false
+  },
+  "schema_version": "aiweb_forge2_phase0_ci_history_correction_v1",
+  "source_authority_manifest": "manifests/BUILD_000C_C_B1_SOURCE_AUTHORITY.json",
+  "source_authority_manifest_sha256": "b33800cd311e6ce90badd3f07772793fb139b8e314e9a4eb02d6c0c51b0da5dc",
+  "status": "PASS"
+}
