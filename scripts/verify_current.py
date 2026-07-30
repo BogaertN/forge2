@@ -25,7 +25,7 @@ def main() -> int:
         [
             sys.executable,
             "scripts/"
-            "verify_phase1_build_004a.py",
+            "verify_phase1_build_005a.py",
             "--mode",
             "committed",
         ],

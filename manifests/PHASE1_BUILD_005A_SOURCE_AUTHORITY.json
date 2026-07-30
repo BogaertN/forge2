@@ -1,0 +1,109 @@
+{
+  "build_branch": "build/phase1-005a-request-state-identities",
+  "build_id": "FORGE2-PHASE1-BUILD-005A",
+  "commit_subject": "Establish request lifecycle state identities",
+  "controlling_roadmap": {
+    "document_id": "1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0",
+    "section": "7. Request Lifecycle",
+    "title": "AI.Web Forge 2.0 Production Build Bible \u2014 Open-Source-First Non-LLM Self-Constructing Engineering Agent",
+    "url": "https://docs.google.com/document/d/1WrnuwxhX_mrjNTJXXNlijMLVA6gYv7S4mWwXnnjmjP0"
+  },
+  "created_utc": "2026-07-30T18:47:57Z",
+  "excluded_generated_records": [
+    "manifests/PHASE1_BUILD_005A_SOURCE_AUTHORITY.json",
+    "receipts/PHASE1_BUILD_005A_RECEIPT.json"
+  ],
+  "expected_parent": "b1daf7e090d350d83315ca87c228bb5f47e0740b",
+  "explicitly_not_implemented": [
+    "REQUEST_TRANSITION_EDGE_TABLE",
+    "REQUEST_TRANSITION_PERMISSION",
+    "REQUEST_TRANSITION_RECEIPT",
+    "REQUEST_STATE_MACHINE_EXECUTION"
+  ],
+  "files": [
+    {
+      "executable": false,
+      "path": "docs/contracts/REQUEST_LIFECYCLE_STATE_IDENTITIES_V1.md",
+      "sha256": "cbaf7a510b4e0db1249b9827c00b52b788f4e6a1ada9d7d8651fb26564825a67",
+      "size_bytes": 2117
+    },
+    {
+      "executable": false,
+      "path": "docs/decisions/ADR-0007-REQUEST-STATE-IDENTITIES.md",
+      "sha256": "223e20d2b8c372bae62017615dea97927d45fe16823662deec280f4540ffbf3f",
+      "size_bytes": 1474
+    },
+    {
+      "executable": false,
+      "path": "scripts/verify_current.py",
+      "sha256": "cda92fc9d68eb62c37d7c2f1b877d3cefd720fdaf872206a84e4a092576ead10",
+      "size_bytes": 960
+    },
+    {
+      "executable": true,
+      "path": "scripts/verify_phase1_build_005a.py",
+      "sha256": "4a4d07693ba9fe46519561407a2f21f087bb64bb843302b62c8ec25d1805562f",
+      "size_bytes": 17838
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/__init__.py",
+      "sha256": "3f6adf8361631366194f75db1ffd47c4a8950db13f7cd8567ad67eb7429c79e8",
+      "size_bytes": 2588
+    },
+    {
+      "executable": false,
+      "path": "src/forge2/contracts/request_state.py",
+      "sha256": "70b49f90f4e3d991a0f31ff7472c69c5b7331ec26e6e90601b377ef058678bbd",
+      "size_bytes": 15111
+    },
+    {
+      "executable": false,
+      "path": "tests/contracts/test_request_state.py",
+      "sha256": "0c048e6b2c437bb3f2033a1d615c2469d276c0e14d2b5b44fbba5bd4951b8bd6",
+      "size_bytes": 11154
+    }
+  ],
+  "forge1_reference": {
+    "branch": "preservation/current-language-core-20260726",
+    "donor_admitted": false,
+    "head": "1f5e39fe0a8c1c5ffcc4fd5fd880b066a58f0608",
+    "path": "/home/nic/forge",
+    "read_only": true
+  },
+  "implementation_basis": {
+    "external_dependency_admitted": false,
+    "forge1_donor_admitted": false,
+    "type": "ORIGINAL_STANDARD_LIBRARY"
+  },
+  "implemented_primitives": [
+    "EXACT_REQUEST_STATE_ENUM",
+    "EXACT_REQUEST_STATE_SEQUENCE",
+    "STABLE_REQUEST_STATE_ORDINAL",
+    "STABLE_REQUEST_STATE_CODE",
+    "DETERMINISTIC_REQUEST_STATE_ID",
+    "IMMUTABLE_REQUEST_STATE_IDENTITY",
+    "IMMUTABLE_REQUEST_STATE_REGISTRY",
+    "DETERMINISTIC_REQUEST_STATE_REGISTRY_ID",
+    "STRICT_UNKNOWN_STATE_REJECTION",
+    "EXPLICIT_TRANSITION_POLICY_HOLD"
+  ],
+  "phase_status": "PHASE_1_IN_PROGRESS",
+  "predecessor_anchors": {
+    "branch_ci_run": 30579718160,
+    "build_id": "FORGE2-PHASE1-BUILD-004A",
+    "canonical_py_sha256": "cdc0ee68d4e3de896a252f8a1f04e5a112842f17acd337a8628fdd19cc19e0b9",
+    "commit": "b1daf7e090d350d83315ca87c228bb5f47e0740b",
+    "identity_py_sha256": "505c01f1fdb5a8166dee234ae1df568a1abbf2d8b5ef20be83a5ffa66939c701",
+    "main_ci_run": 30579953302,
+    "manifest_path": "manifests/PHASE1_BUILD_004A_SOURCE_AUTHORITY.json",
+    "manifest_sha256": "44edde4f86c0a9c188e4f010e637214985d0063467016ceddea7339ba25c8866",
+    "receipt_path": "receipts/PHASE1_BUILD_004A_RECEIPT.json",
+    "receipt_sha256": "1e980a3b0abeb4aacb0be05114a5b05db20d4d4dcd3603ef6708f22bade95916",
+    "successor_py_sha256": "13c158d6850eaab74572a8356152d8923c5bc2526d8189cb0f86652625389a52"
+  },
+  "product_capability_claimed": false,
+  "runtime_authority_added": false,
+  "schema_version": "aiweb_forge2_phase1_build_005a_source_authority_v1",
+  "transition_policy_defined": false
+}
