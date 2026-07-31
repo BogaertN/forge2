@@ -1,0 +1,39 @@
+{
+  "build_id": "FORGE2-PHASE1-BUILD-010A-R2",
+  "contract_boundary_changed": false,
+  "correct_span": {
+    "end": 87,
+    "start": 60
+  },
+  "corrected_build_id": "FORGE2-PHASE1-BUILD-010A",
+  "corrected_fixture_occurrences": 3,
+  "created_utc": "2026-07-31T15:16:16Z",
+  "evidence_validation_removed": false,
+  "forge1_modified": false,
+  "incorrect_span": {
+    "end": 88,
+    "start": 61
+  },
+  "main_advanced": false,
+  "observed_value": "without choosing a provider",
+  "original_failure_preserved": true,
+  "original_failure_type": "feature_evidence_span_mismatch",
+  "packages_installed": [],
+  "preserved_partial_source": {
+    "path": "src/forge2/contracts/capability_requirement.py",
+    "sha256": "2e0a1fc19ce8b41162aaba463e9a33ba198879c5952e4625d96ad0394d8e1e67",
+    "size_bytes": 62503
+  },
+  "provider_selected": false,
+  "r1_expected_contract_source_count": 11,
+  "r1_harness_failure_preserved": true,
+  "r1_harness_failure_type": "accepted_baseline_verifier_observed_preserved_untracked_candidate_source",
+  "r1_observed_contract_source_count": 12,
+  "r2_baseline_source": "temporary_clean_main_clone",
+  "r2_baseline_verifier_isolated": true,
+  "runtime_authority_added": false,
+  "schema_version": "aiweb_forge2_phase1_build_010a_r2_correction_receipt_v1",
+  "source_text": "Describe the capability required to inspect RequestContract without choosing a provider.",
+  "status": "PASS",
+  "test_expectation_weakened": false
+}
